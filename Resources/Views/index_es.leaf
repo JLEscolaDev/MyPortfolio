@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jose Luis Escolá | Portfolio Profesional</title>
+
+    <!-- Link to AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <!-- Link to FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Loader -->
+    <div id="loader"></div>
+    
+    <!-- Selector de Idioma -->
+    <div class="language-selector">
+        <a href="/?lang=es">ES</a> | <a href="/?lang=en">EN</a>
+    </div>
+
+    <!-- Navegación con Tabs -->
+    <nav class="tabs-nav">
+        <ul>
+            <li><a href="#welcome-section">Sobre mí</a></li>
+            <li><a href="#skills-section">Habilidades</a></li>
+            <li><a href="#projects-section">Proyectos</a></li>
+            <li><a href="#experience-section">Experiencia</a></li>
+            <li><a href="#contact-section">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Welcome Section -->
+    <section id="welcome-section" class="section" data-aos="fade-in" data-aos-duration="1000">
+        <h1>Jose Luis Escolá</h1>
+        <p>Desarrollador de aplicaciones móviles y apasionado del diseño y la usabilidad, estoy especializado en iOS, Swift, SwiftUI y tecnologías Apple. Como profesional experimentado en metodologías ágiles y el mundo empresarial, actualmente estoy enfocado en proyectos de innovación y pivotando hacia la nueva computación espacial con VisionPro.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills-section" class="section" data-aos="fade-up" data-aos-duration="1000">
+        <h2>Habilidades</h2>
+
+        <!-- Lenguajes y Frameworks -->
+        <div class="skills-container">
+            <div class="skills-row">
+                <div class="skills-column">
+                    <h4>Diseño de interfaces - Front End</h4>
+                    <ul class="skills-list">
+                        <li><i class="fab fa-apple"></i> Experiencia completa en el ecosistema de Apple</li>
+                        <li><i class="fas fa-code"></i> SwiftUI</li>
+                        <li><i class="fas fa-code"></i> UIKit</li>
+                        <li><i class="fas fa-code"></i> Storyboards</li>
+                    </ul>
+                </div>
+                <div class="skills-column">
+                    <h4>Full Stack Tecnologías Apple</h4>
+                    <ul class="skills-list">
+                        <li><i class="fas fa-code"></i> Swift</li>
+                        <li><i class="fas fa-code"></i> Nociones de Obj-C</li>
+                        <li><i class="fas fa-code"></i> VisionOS</li>
+                        <li><i class="fas fa-code"></i> WidgetKit</li>
+                        <li><i class="fas fa-code"></i> ARKit</li>
+                        <li><i class="fas fa-code"></i> RealityKit</li>
+                        <li><i class="fas fa-code"></i> CloudKit</li>
+                        <li><i class="fas fa-code"></i> etc.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="skills-row full-width">
+                <div class="skills-column">
+                    <h4>Backend y Web</h4>
+                    <ul class="skills-list">
+                        <li><i class="fas fa-server"></i> Vapor + Leaf</li>
+                    </ul>
+                </div>
+                <div class="skills-column">
+                    <h4>Frameworks populares</h4>
+                    <ul class="skills-list">
+                        <li><i class="fas fa-project-diagram"></i> Eureka</li>
+                        <li><i class="fas fa-project-diagram"></i> Lottie</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Gestión de Dependencias -->
+        <div class="skills-container">
+            <div class="skills-row full-width">
+                <div class="skills-column full">
+                    <h4>Gestión de Dependencias</h4>
+                    <ul class="skills-list">
+                        <li><i class="fas fa-tools"></i> Carthage</li>
+                        <li><i class="fas fa-tools"></i> CocoaPods</li>
+                        <li><i class="fas fa-tools"></i> SPM (Swift Package Manager)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Herramientas -->
+        <div class="skills-container">
+            <div class="skills-row">
+                <div class="skills-column">
+                    <h4>Documentación</h4>
+                    <ul class="skills-list">
+                        <li><i class="fas fa-file-alt"></i> Word</li>
+                        <li><i class="fas fa-file-alt"></i> Confluence</li>
+                        <li><i class="fas fa-file-alt"></i> DocC</li>
+                        <li><i class="fas fa-file-alt"></i> OneNote</li>
+                    </ul>
+                </div>
+                <div class="skills-column">
+                    <h4>Metodologías Ágiles</h4>
+                    <ul class="skills-list">
+                        <li><i class="fas fa-project-diagram"></i> SCRUM</li>
+                        <li><i class="fas fa-project-diagram"></i> Kanban</li>
+                        <li><i class="fas fa-project-diagram"></i> Jira</li>
+                        <li><i class="fas fa-project-diagram"></i> Trello</li>
+                        <li><i class="fas fa-project-diagram"></i> MeisterTask</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="skills-row full-width">
+                <div class="skills-column full">
+                    <h4>Control de Versiones</h4>
+                    <ul class="skills-list">
+                        <li><i class="fas fa-code-branch"></i> GitLab</li>
+                        <li><i class="fas fa-code-branch"></i> GitHub</li>
+                        <li><i class="fas fa-code-branch"></i> Bitbucket</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects-section" class="section" data-aos="fade-up" data-aos-duration="1000">
+        <div class="hstack-container">
+            <img src="/Images/upsAndDonwsArrow.png" class="arrow-from-projects-to-success mirror" alt="Flecha con altibajos pero siempre termina en la cima">
+            <h2>Mis Proyectos</h2>
+            <img src="/Images/upsAndDonwsArrow.png" class="arrow-from-projects-to-success" alt="Flecha con altibajos pero siempre termina en la cima">
+        </div>
+        <div class="projects-grid">
+            #for(project in projects):
+            <div class="project-item" data-aos="zoom-in" data-aos-duration="800">
+                <a href="#(project.link)?lang=#(language)">
+                    <img src="#(project.image)" alt="Project image of #(project.name)" class="project-image">
+                    <h3>#(project.name)</h3>
+                    <p>#(project.description)</p>
+                </a>
+            </div>
+            #endfor
+        </div>
+        
+        <div class="skills-row full-width">
+            <div class="skills-column full">
+                <h4>Control de Versiones</h4>
+                <ul class="skills-list">
+                    <li><i class="fas fa-laptop-code"></i>Este proyecto web es una solución personalizada hecha con Vapor y Leaf, alojada en Heroku usando Buildpacks (similares a Docker, que te abstraen de preocuparte por el sistema operativo subyacente y configuraciones).</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section with Timeline -->
+    <section id="experience-section" class="section" data-aos="fade-up" data-aos-duration="1000">
+        <h2>Experiencia</h2>
+        <div class="timeline-container">
+
+            <!-- Entrada 1 -->
+            <div class="timeline-entry">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="experience-column">
+                        <h4>iOS Developer - The Good Programming</h4>
+                        <p>Abril 2022 - Actualidad</p>
+                    </div>
+                    <div class="timeline-description">
+                        <ul>
+                            <li>Desarrollo de aplicaciones móviles para IoT utilizando Swift, SwiftUI y UIKit.</li>
+                            <li>Colaboración con Netatmo (parte de Legrand) para la integración de productos inteligentes.</li>
+                            <li>Gestión de dependencias con SPM (Swift Package Manager).</li>
+                            <li>Desarrollo de interfaces por código utilizando SwiftUI.</li>
+                            <li>Colaboración directa con equipos de hardware para la integración de productos conectados.</li>
+                            <li>Implementación de procesos ágiles como SCRUM para la planificación y gestión del desarrollo.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Entrada 2 -->
+            <div class="timeline-entry">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="experience-column">
+                        <h4>iOS Developer - Endalia</h4>
+                        <p>Junio 2020 - Marzo 2022</p>
+                        <p>Implementación de soluciones empresariales y optimización de aplicaciones en el sector de recursos humanos.</p>
+                    </div>
+                    <div class="timeline-description">
+                        <ul>
+                            <li>Desarrollo modular con UIKit, RXSwift y MVVM.</li>
+                            <li>Integración de Firebase para notificaciones y gestión de usuarios.</li>
+                            <li>Creación de aplicaciones reutilizables y modulares enfocadas a la escalabilidad.</li>
+                            <li>Integración de Firebase para la gestión de autenticación y notificaciones push.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Entrada 3 -->
+            <div class="timeline-entry">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="experience-column">
+                        <h4>iOS Developer - Animal Care Technologies</h4>
+                        <p>Agosto 2019 - Abril 2020</p>
+                    </div>
+                    <div class="timeline-description">
+                        <ul>
+                            <li>Creación de una aplicación desde cero hasta MVP para una startup.</li>
+                            <li>Diseño de interfaces con UIKit y conexiones a REST APIs.</li>
+                            <li>Uso avanzado de Xcode, Swift y notificaciones Push.</li>
+                            <li>Desarrollo desde cero de una app para la comunicación interna de las empresas.</li>
+                            <li>Conexión a APIs RESTful para la gestión de datos en tiempo real.</li>
+                            <li>Implementación de notificaciones push para la interacción en tiempo real.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Entrada 4 -->
+            <div class="timeline-entry">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="experience-column">
+                        <h4>Junior Developer - GOLIVE Services (Prácticas)</h4>
+                        <p>Enero 2019 - Abril 2019</p>
+                        <p>Apoyo en proyectos de desarrollo de software y testing.</p>
+                    </div>
+                    <div class="timeline-description">
+                        <ul>
+                            <li>Colaboración con el equipo en metodologías ágiles.</li>
+                            <li>PHP y uso de marcos como Smarty y Symfony.</li>
+                            <li>Resolución de errores y optimización web con Wordpress (Divi framework).</li>
+                            <li>Implementación de técnicas SEO para mejorar el posicionamiento web.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact-section" class="section" data-aos="fade-up" data-aos-duration="1000">
+        <img src="/Images/arrowTopToBottomLeft.png" class="arrow-to-contact" alt="Flecha apuntando a Contacto">
+        <h2>Contacto</h2>
+        <div class="contact-info">
+            <p><i class="fas fa-envelope"></i> jltrabajo18@gmail.com</p>
+            <!-- Botón de descarga de CV -->
+            <a href="/Downloads/Curriculum Jose Luis Escolá - CV.pdf" download class="cv-download-button">
+                <i class="fas fa-file-pdf"></i> Descargar CV
+            </a>
+            <!-- Ícono de LinkedIn -->
+            <a href="https://www.linkedin.com/in/jose-luis-escol%C3%A1-garc%C3%ADa-44a964175/" target="_blank" class="linkedin-icon">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+    </section>
+
+    <div class="contact-container">
+        <div class="contact-image">
+            <img src="Images/ProfilePhotoJLE.jpg" alt="Jose Luis Escolá Photo">
+        </div>
+        <div class="contact-form">
+            <form action="/send-message" method="POST">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Tu email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Asunto</label>
+                    <input type="text" id="subject" name="subject" placeholder="El asunto" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Tu mensaje" required></textarea>
+                </div>
+                <button type="submit" class="send-message">Enviar</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+    <!-- Link to AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+            once: true,
+        });
+
+        window.addEventListener("load", function() {
+            document.getElementById("loader").style.display = "none"; // Oculta el loader
+        });
+    </script>
+</body>
+</html>

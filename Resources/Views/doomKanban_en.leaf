@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doom Kanban Board</title>
+    <link rel="stylesheet" href="/css/doomKanban.css">
+    <!-- Font for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Back button -->
+    <div class="back-button-container">
+        <button onclick="goBack()" class="back-btn">
+            <i class="fas fa-arrow-left"></i> Go Back
+        </button>
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+
+    <div class="main-container">
+        <!-- Introduction section -->
+        <section class="neumorphic">
+            <h1>Doom Kanban Board</h1>
+            <p>
+                Welcome to Doom Kanban Board! A fun and interactive game to manage your tasks using a Kanban board inspired by the chaos and strategy of a workday. 💀
+            </p>
+
+            <video controls>
+                <source src="/Videos/KanbanBoardTeaserVideo.mp4" type="video/mp4">
+                Your browser does not support video playback.
+            </video>
+        </section>
+
+        <!-- How it works section -->
+        <section class="neumorphic">
+            <h2>How does it work?</h2>
+            <p>
+                In Doom Kanban Board, you manage tasks by moving them through four columns until they are marked as "Done."
+            </p>
+            <!-- Image now larger and below the text -->
+            <img src="/Images/DoomKanban/KanbanBoard.png" alt="Doom Kanban Board" class="header-image-large">
+        </section>
+
+        <!-- Explanation of the columns and runningSprints -->
+        <section class="left-align-container content-with-image">
+            <div class="text-content">
+                <h2>🛠️ How do Kanban cards work?</h2>
+                <h3>1. To Do</h3>
+                <p>This is where all new tasks are. Tasks start here, waiting for your attention.</p>
+
+                <h3>2. In Progress</h3>
+                <p>
+                    When you start working on a task, move it to this column. It represents tasks that you are actively working on.
+                    Once a checkbox appears in the top right corner of the card, you can mark it as completed and move it to the next phase.
+                </p>
+
+                <h3>3. Testing</h3>
+                <p>
+                    When a task is complete but needs review, move it to this column. This is where you review or test your work.
+                    In this phase, you might encounter bugs, marked by a red flag 🚩. To fix it, click on the card, which will open a chat with the corresponding developer to fix the bug.
+                    Once resolved, the flag will be removed, and the task will automatically be completed.
+                </p>
+
+                <h3>4. Done</h3>
+                <p>
+                    When testing is finished, and the task is fully completed, you can move it to the Done column. Congratulations! 🎉
+                    You must move all tasks to the Done column before the remaining time for each task runs out to earn extra points.
+                </p>
+            </div>
+            <img src="/Images/DoomKanban/runningSprintsAndProjectsLayout.png" alt="Running Sprints" class="running-sprints-image">
+        </section>
+
+        <!-- Rules section -->
+        <section class="left-align-container">
+            <h2>🎮 Rules</h2>
+            <p>
+                You must move all tasks from the "To Do" column to "Done" using drag and drop.
+            </p>
+
+            <p>
+                <strong>Warnings:</strong> If you fail a task, you will receive a ⚠️ warning from your boss. If you accumulate three warnings in the same project, you will be fired. From the third round onwards, your boss will start to distrust you and will observe you at certain intervals, represented by a red eye in the warnings section. If you make a mistake while being watched, the penalty will be doubled. Be careful!
+            </p>
+
+            <p>
+                <strong>Sprints and Projects:</strong> On the left side of the screen, you'll see the next task to complete, based on the project and sprint you're working on. It's possible to have multiple active projects simultaneously, and each project has several sprints and tasks. You must complete them all.
+            </p>
+
+            <p>
+                <strong>Skills:</strong> On the right side of the screen, you'll have access to three skills that will help you complete tasks faster:
+            </p>
+            <ul>
+                <li>Skill to see the next pending task.</li>
+                <li>Skill to halve the remaining tasks.</li>
+                <li>Skill to automatically complete tasks for a short period.</li>
+            </ul>
+
+            <p>
+                There are tasks marked with a red flag 🚩 that you must fix, and some important tasks are marked with a red exclamation mark ❗️, which give double points but also double warnings if you fail.
+            </p>
+        </section>
+
+        <!-- Skills section with a smaller image -->
+        <section class="left-align-container content-with-image">
+            <div class="text-content">
+                <h2>💡 Skills</h2>
+                <p>
+                    On the right side of the board, you have three skills that will help you complete tasks faster:
+                </p>
+                <ul>
+                    <li>See the next pending task</li>
+                    <li>Halve the remaining tasks</li>
+                    <li>Automatically complete tasks</li>
+                </ul>
+            </div>
+            <img src="/Images/DoomKanban/skills.png" alt="Skills" class="skills-image-small">
+        </section>
+
+        <!-- Warnings section -->
+        <section class="left-align-container">
+            <h2>Warnings</h2>
+            <p>If you fail a task, you will receive a ⚠️ warning. Accumulate three warnings in the same project, and you will be fired.</p>
+            <img src="/Images/DoomKanban/warnings.png" alt="Warnings" class="warning-image">
+        </section>
+
+        <!-- Leaderboard + Game Center -->
+        <section class="left-align-container">
+            <h2>Leaderboard + Apple Game Center</h2>
+            <p>Use GameCenter to compete against your friends and climb the leaderboard to become number 1. Earn achievements while playing, which you can view in a customized 3D space for a better experience.</p>
+            
+            <div class="hstack-images">
+                <img src="/Images/DoomKanban/leaderboard.png" alt="Leaderboard" class="half-width-image">
+                <img src="/Images/DoomKanban/archivements.png" alt="Achievements" class="half-width-image">
+            </div>
+            
+            <h2>Achievement Examples</h2>
+            <div class="hstack-images">
+                <img src="/Images/DoomKanban/Unlock3Skills_CoinArchivement.png" alt="Skills for the win" class="half-width-image">
+                <img src="/Images/DoomKanban/Move2000Tasks-CoinArchivement.png" alt="Efecto 2000" class="half-width-image">
+            </div>
+        </section>
+
+        <!-- Simulation section with visionOS -->
+        <section class="left-align-container">
+            <h2>Simulated Conversation with visionOS</h2>
+            <p>We have implemented an ornament in visionOS to simulate a fictional conversation between the Product Manager and the Developer. In this conversation, the PM asks the Developer to urgently fix a bug, using a chat interface that reinforces the game’s narrative. This functionality adds an extra layer of immersion and realism to the development and pressure environment that developers often face in their day-to-day work.</p>
+            
+            <p>This chat ornament simulates a realistic conversation and integrates with the 3D visionOS environment to enhance the user experience, giving it a fun twist while managing tasks on the Kanban. It feels as if you are receiving real-time instructions while playing!</p>
+            
+            <div class="hstack-images">
+                <img src="/Images/DoomKanban/fakeMobileChatWithTheDeveloperAskingForFix.png" alt="Chat with the Developer" class="half-width-image">
+            </div>
+        </section>
+
+        <!-- Features section -->
+        <section id="features" class="neumorphic">
+            <h2>🔧 Features</h2>
+            <ul>
+                <li>Interactive drag-and-drop Kanban board</li>
+                <li>Four distinct task columns: Backlog, In Progress, Review, and Done</li>
+                <li>Fake mobile chat and pool of task titles based on jokes</li>
+                <li>Office immersive experience that reacts to the game (e.g., Office on fire)</li>
+                <li>Leaderboard connected to iCloud and GameCenter</li>
+                <li>3D model representation of Game Center achievements</li>
+                <li>In-game music</li>
+            </ul>
+            <img src="/Images/DoomKanban/officeFire.png" alt="Doom Kanban Board" class="header-image-large">
+        </section>
+
+        <!-- Final note on initial attempts with Unity -->
+        <section class="left-align-container">
+            <h2>Initial Fire Particles Attempt with Unity</h2>
+            <p>In an initial attempt, I used Unity to generate the fire and smoke particles needed for the burning office simulation. However, I encountered a problem: I could not export the particles generated in Unity as a .fbx file that could then be converted to USD format via Reality Converter.</p>
+            
+            <p>Due to this limitation, I opted to use **Reality Composer Pro**, which allowed me to natively generate the fire and smoke particles and integrate them with the 3D office model. This tool was key to achieving a smoother experience and ensuring the fire and smoke simulations behaved as expected.</p>
+            
+            <div class="hstack-images">
+                <img src="/Images/DoomKanban/previousAttemptsForFireParticlesUsingUnity.png" alt="Attempts with Unity" class="half-width-image">
+            </div>
+        </section>
+    </div>
+</body>
+</html>

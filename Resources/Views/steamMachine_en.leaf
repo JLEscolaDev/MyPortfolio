@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SteamMachine Project</title>
+    <link rel="stylesheet" href="/css/steamMachine.css">
+</head>
+<body>
+    <!-- Back button -->
+    <div class="back-button-container">
+        <button onclick="goBack()" class="back-btn">
+            <i class="fas fa-arrow-left"></i> Go Back
+        </button>
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back(); // Go back to the previous page
+        }
+    </script>
+
+    <!-- Main SteamMachine Section -->
+    <section class="steam-machine-section">
+        <h1>SteamMachine</h1>
+        <img src="/Images/SteamMachine3.png" alt="SteamMachine" class="header-image">
+
+        <p>
+            SteamMachine is the cutting-edge project blending the latest in neon design with innovative hardware technology. With its futuristic pyramid shape and stunning lighting effects, this project exemplifies the combination of creativity and engineering.
+        </p>
+
+        <h2>Explore the Design</h2>
+        <!-- Download Button -->
+        <a href="Downloads/SteamMachine.blend.zip" download class="download-button">Download Steam Machine Project</a>
+
+        <div class="hstack-images">
+            <img src="/Images/SteamMachine2.jpg" alt="SteamMachine Side View">
+            <img src="/Images/SteamMachine.jpg" alt="SteamMachine Back View">
+        </div>
+
+        <div class="left-align-container">
+            <h2>Step 1. Business Concept</h2>
+            <p>
+                SteamMachine was envisioned to follow a marketing model similar to Nespresso’s, where a visually appealing machine is sold at cost, while revenue is generated through the sale of consumables—in this case, vape liquids. The project targeted nightclubs, offering a replacement for traditional hookahs with a more visually striking, faster, and safer alternative. The focus was to build long-term contracts around consumable sales, enhancing social media presence and ensuring operational efficiency with minimal setup time.
+            </p>
+
+            <h2>Step 2. Design Process</h2>
+            <p>
+                Using Blender, we explored various design options to compartmentalize materials, optimize space, and ensure safe handling of liquids and batteries. We experimented with different structures and LED placements to create an immersive user experience, focusing on safety and aesthetics.
+            </p>
+
+            <h2>Step 3. Challenges and Market Discovery</h2>
+            <p>
+                During the market research phase, we discovered a large-scale manufacturer producing similar devices aimed at replacing traditional hookahs with cheaper vapor-based alternatives. Although their focus differed slightly from ours, the overlap in goals led us to reconsider our production strategy.
+            </p>
+
+            <h2>Step 4. Project Redirection</h2>
+            <p>
+                Given the availability of these devices, we shifted our approach towards leveraging their technology through bulk purchasing, allowing us to focus on branding and enhancing their design for a more premium, customizable product experience.
+            </p>
+
+            <h2>Final step. Project Abandonment</h2>
+            <p>
+                Despite the pivot, regulatory challenges surrounding vape products, coupled with rising anti-vape legislation, presented significant risks. The combination of high regulatory costs and shifting legal landscapes led to the difficult decision to halt the project.
+            </p>
+        </div>
+    </section>
+
+</body>
+</html>

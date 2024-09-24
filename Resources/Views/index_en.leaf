@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jose Luis Escolá | Professional Portfolio</title>
+
+    <!-- Link to AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <!-- Link to FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Loader -->
+    <div id="loader"></div>
+    
+    <!-- Language Selector -->
+    <div class="language-selector">
+        <a href="/?lang=es">ES</a> | <a href="/?lang=en">EN</a>
+    </div>
+
+    <!-- Navigation with Tabs -->
+    <nav class="tabs-nav">
+        <ul>
+            <li><a href="#welcome-section">About Me</a></li>
+            <li><a href="#skills-section">Skills</a></li>
+            <li><a href="#projects-section">Projects</a></li>
+            <li><a href="#experience-section">Experience</a></li>
+            <li><a href="#contact-section">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Welcome Section -->
+    <section id="welcome-section" class="section" data-aos="fade-in" data-aos-duration="1000">
+        <h1>Jose Luis Escolá</h1>
+        <p>Mobile application developer and passionate about design and usability, I specialize in iOS, Swift, SwiftUI, and Apple technologies. As an experienced professional in agile methodologies and the business world, I am currently focused on innovation projects and pivoting towards the new spatial computing with VisionPro.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills-section" class="section" data-aos="fade-up" data-aos-duration="1000">
+        <h2>Skills</h2>
+
+        <!-- Languages and Frameworks -->
+        <div class="skills-container">
+            <div class="skills-row">
+                <div class="skills-column">
+                    <h4>Interface Design - Front End</h4>
+                    <ul class="skills-list">
+                        <li><i class="fab fa-apple"></i> Full experience in the Apple ecosystem</li>
+                        <li><i class="fas fa-code"></i> SwiftUI</li>
+                        <li><i class="fas fa-code"></i> UIKit</li>
+                        <li><i class="fas fa-code"></i> Storyboards</li>
+                    </ul>
+                </div>
+                <div class="skills-column">
+                    <h4>Full Stack Apple Technologies</h4>
+                    <ul class="skills-list">
+                        <li><i class="fas fa-code"></i> Swift</li>
+                        <li><i class="fas fa-code"></i> Knowledge of Obj-C</li>
+                        <li><i class="fas fa-code"></i> VisionOS</li>
+                        <li><i class="fas fa-code"></i> WidgetKit</li>
+                        <li><i class="fas fa-code"></i> ARKit</li>
+                        <li><i class="fas fa-code"></i> RealityKit</li>
+                        <li><i class="fas fa-code"></i> CloudKit</li>
+                        <li><i class="fas fa-code"></i> etc.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="skills-row full-width">
+                <div class="skills-column">
+                    <h4>Backend and Web</h4>
+                    <ul class="skills-list">
+                        <li><i class="fas fa-server"></i> Vapor + Leaf</li>
+                    </ul>
+                </div>
+                <div class="skills-column">
+                    <h4>Popular Frameworks</h4>
+                    <ul class="skills-list">
+                        <li><i class="fas fa-project-diagram"></i> Eureka</li>
+                        <li><i class="fas fa-project-diagram"></i> Lottie</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dependency Management -->
+        <div class="skills-container">
+            <div class="skills-row full-width">
+                <div class="skills-column full">
+                    <h4>Dependency Management</h4>
+                    <ul class="skills-list">
+                        <li><i class="fas fa-tools"></i> Carthage</li>
+                        <li><i class="fas fa-tools"></i> CocoaPods</li>
+                        <li><i class="fas fa-tools"></i> SPM (Swift Package Manager)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skills-container">
+            <div class="skills-row">
+                <div class="skills-column">
+                    <h4>Documentation</h4>
+                    <ul class="skills-list">
+                        <li><i class="fas fa-file-alt"></i> Word</li>
+                        <li><i class="fas fa-file-alt"></i> Confluence</li>
+                        <li><i class="fas fa-file-alt"></i> DocC</li>
+                        <li><i class="fas fa-file-alt"></i> OneNote</li>
+                    </ul>
+                </div>
+                <div class="skills-column">
+                    <h4>Agile Methodologies</h4>
+                    <ul class="skills-list">
+                        <li><i class="fas fa-project-diagram"></i> SCRUM</li>
+                        <li><i class="fas fa-project-diagram"></i> Kanban</li>
+                        <li><i class="fas fa-project-diagram"></i> Jira</li>
+                        <li><i class="fas fa-project-diagram"></i> Trello</li>
+                        <li><i class="fas fa-project-diagram"></i> MeisterTask</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="skills-row full-width">
+                <div class="skills-column full">
+                    <h4>Version Control</h4>
+                    <ul class="skills-list">
+                        <li><i class="fas fa-code-branch"></i> GitLab</li>
+                        <li><i class="fas fa-code-branch"></i> GitHub</li>
+                        <li><i class="fas fa-code-branch"></i> Bitbucket</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects-section" class="section" data-aos="fade-up" data-aos-duration="1000">
+        <div class="hstack-container">
+            <img src="/Images/upsAndDonwsArrow.png" class="arrow-from-projects-to-success mirror" alt="Arrow with ups and downs but always finishes on top">
+            <h2>My Projects</h2>
+            <img src="/Images/upsAndDonwsArrow.png" class="arrow-from-projects-to-success" alt="Arrow with ups and downs but always finishes on top">
+        </div>
+        <div class="projects-grid">
+            #for(project in projects):
+            <div class="project-item" data-aos="zoom-in" data-aos-duration="800">
+                <a href="#(project.link)?lang=#(language)">
+                    <img src="#(project.image)" alt="Project image of #(project.name)" class="project-image">
+                    <h3>#(project.name)</h3>
+                    <p>#(project.description)</p>
+                </a>
+            </div>
+            #endfor
+        </div>
+        
+        <div class="skills-row full-width">
+            <div class="skills-column full">
+                <h4>Version Control</h4>
+                <ul class="skills-list">
+                    <li><i class="fas fa-laptop-code"></i>This web project is a custom solution made with Vapor and Leaf, hosted on Heroku using Buildpacks (which are similar to Docker and abstract you from worrying about the underlying operating system and configurations).</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section with Timeline -->
+    <section id="experience-section" class="section" data-aos="fade-up" data-aos-duration="1000">
+        <h2>Experience</h2>
+        <div class="timeline-container">
+
+            <!-- Entry 1 -->
+            <div class="timeline-entry">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="experience-column">
+                        <h4>iOS Developer - The Good Programming</h4>
+                        <p>April 2022 - Present</p>
+                    </div>
+                    <div class="timeline-description">
+                        <ul>
+                            <li>Mobile application development for IoT using Swift, SwiftUI, and UIKit.</li>
+                            <li>Collaboration with Netatmo (part of Legrand) for the integration of smart products.</li>
+                            <li>Dependency management with SPM (Swift Package Manager).</li>
+                            <li>Interface development through code using SwiftUI.</li>
+                            <li>Direct collaboration with hardware teams for connected product integration.</li>
+                            <li>Implementation of agile processes such as SCRUM for development planning and management.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Entry 2 -->
+            <div class="timeline-entry">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="experience-column">
+                        <h4>iOS Developer - Endalia</h4>
+                        <p>June 2020 - March 2022</p>
+                        <p>Implementation of business solutions and application optimization in the human resources sector.</p>
+                    </div>
+                    <div class="timeline-description">
+                        <ul>
+                            <li>Modular development with UIKit, RXSwift, and MVVM.</li>
+                            <li>Firebase integration for notifications and user management.</li>
+                            <li>Creation of reusable and scalable modular applications.</li>
+                            <li>Firebase integration for authentication and push notifications.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Entry 3 -->
+            <div class="timeline-entry">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="experience-column">
+                        <h4>iOS Developer - Animal Care Technologies</h4>
+                        <p>August 2019 - April 2020</p>
+                    </div>
+                    <div class="timeline-description">
+                        <ul>
+                            <li>Created an application from scratch to MVP for a startup.</li>
+                            <li>Interface design with UIKit and REST API connections.</li>
+                            <li>Advanced use of Xcode, Swift, and Push Notifications.</li>
+                            <li>Development from scratch of an internal communication app for companies.</li>
+                            <li>Connection to RESTful APIs for real-time data management.</li>
+                            <li>Push notifications implementation for real-time interaction.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Entry 4 -->
+            <div class="timeline-entry">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="experience-column">
+                        <h4>Junior Developer - GOLIVE Services (Internship)</h4>
+                        <p>January 2019 - April 2019</p>
+                        <p>Support in software development and testing projects.</p>
+                    </div>
+                    <div class="timeline-description">
+                        <ul>
+                            <li>Collaboration with the team in agile methodologies.</li>
+                            <li>PHP and use of frameworks such as Smarty and Symfony.</li>
+                            <li>Error resolution and web optimization with WordPress (Divi framework).</li>
+                            <li>Implementation of SEO techniques to improve web positioning.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact-section" class="section" data-aos="fade-up" data-aos-duration="1000">
+        <img src="/Images/arrowTopToBottomLeft.png" class="arrow-to-contact" alt="Arrow pointing to Contact">
+        <h2>Contact</h2>
+        <div class="contact-info">
+            <p><i class="fas fa-envelope"></i> jltrabajo18@gmail.com</p>
+            <!-- CV download button -->
+            <a href="/Downloads/Curriculum Jose Luis Escolá - CV.pdf" download class="cv-download-button">
+                <i class="fas fa-file-pdf"></i> Download CV
+            </a>
+            <!-- LinkedIn Icon -->
+            <a href="https://www.linkedin.com/in/jose-luis-escol%C3%A1-garc%C3%ADa-44a964175/" target="_blank" class="linkedin-icon">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+    </section>
+
+    <div class="contact-container">
+        <div class="contact-image">
+            <img src="Images/ProfilePhotoJLE.jpg" alt="Your Image">
+        </div>
+        <div class="contact-form">
+            <form action="/send-message" method="POST">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+                </div>
+                <button type="submit" class="send-message">Send</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+    <!-- Link to AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+            once: true,
+        });
+
+        window.addEventListener("load", function() {
+            document.getElementById("loader").style.display = "none"; // Hide the loader
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merch On Demand | Emprendimiento con IA</title>
+    <link rel="stylesheet" href="/css/merchOnDemand.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section with Hero Image -->
+    <header class="hero-section">
+        <div class="overlay">
+            <h1>Emprendimiento con IA en Diseño y Comercio Electrónico</h1>
+            <p>Mi viaje hacia la creación de un negocio automatizado usando IA</p>
+        </div>
+    </header>
+
+    <!-- Back Button -->
+    <div class="back-button-container">
+        <button onclick="goBack()" class="back-btn">
+            <i class="fas fa-arrow-left"></i> Volver atrás
+        </button>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <section class="introduction">
+            <h2>Mi Historia de Emprendimiento</h2>
+            <p>En mi afán por explorar nuevas formas de generar ingresos pasivos con mínima intervención humana, emprendí un proyecto innovador que combinaba inteligencia artificial, diseño gráfico y comercio electrónico. La idea central era aprovechar las capacidades emergentes de las IA generativas de imágenes, como DALL·E y Midjourney, para crear diseños únicos y atractivos que pudieran aplicarse a una variedad de productos destinados a la venta directa al consumidor.</p>
+        </section>
+
+        <!-- Phase Section -->
+        <section class="phase-section">
+            <h2>Fase de Conceptualización y Diseño</h2>
+            <p>El proceso comenzó con una intensa fase de investigación y experimentación. Utilicé DALL·E y Midjourney a través de Discord para generar imágenes base, explorando diferentes estilos y conceptos que pudieran resonar con los consumidores. Estas herramientas de IA me permitieron producir rápidamente una amplia gama de diseños, desde patrones abstractos hasta ilustraciones temáticas.</p>
+            <p>Para refinar y personalizar estos diseños, incorporé el uso de software de diseño gráfico como Adobe Illustrator, Adobe XD y GIMP...</p>
+             <!-- Productos diseñados con IA -->
+            <section class="ai-products">
+                <h3>Diseños Generados por IA</h3>
+                <div class="product-gallery">
+                    <img src="/Images/merchOnDemand/rectangleAbstractFrame.jpg" alt="Cuadro abstracto generado por IA">
+                    <img src="/Images/merchOnDemand/blackAndWhite-Cup.jpg" alt="Vaso en blanco y negro con diseño IA">
+                    <img src="/Images/merchOnDemand/cup.jpg" alt="Vaso con patrones de colores generados por IA">
+                </div>
+            </section>
+        </section>
+
+        <!-- Automated System Section -->
+        <section class="system-section">
+            <h2>Desarrollo de un Sistema Automatizado</h2>
+            <p>Con los diseños listos, el siguiente paso fue establecer un sistema automatizado que minimizara la intervención humana en la producción y distribución. Opté por Printful, una plataforma de impresión bajo demanda que se integra fácilmente con tiendas en línea y se encarga de la producción, el embalaje y el envío de los productos al cliente final. Esto eliminó la necesidad de gestionar inventario o logística, alineándose perfectamente con mi objetivo de crear una fuente de ingresos pasivos...</p>
+        </section>
+
+        <!-- Marketing Strategy Section -->
+        <section class="marketing-section">
+            <h2>Estrategias de Marketing y Ampliación del Catálogo</h2>
+            <p>Conscientes de que algunos consumidores podrían ser reticentes a comprar productos diseñados por IA, decidí diversificar el catálogo. Utilicé mis habilidades en Adobe Illustrator y GIMP para crear diseños manuales, incluyendo frases motivacionales y gráficos simples pero atractivos...</p>
+            <!-- Productos diseñados manualmente -->
+            <section class="manual-products">
+                <h3>Diseños Manuales para Ampliar el Catálogo</h3>
+                <div class="product-gallery">
+                    <img src="/Images/merchOnDemand/cap.jpg" alt="Gorra diseñada manualmente">
+                    <img src="/Images/merchOnDemand/doItForHer.avif" alt="Marco motivacional diseñado manualmente">
+                    <img src="/Images/merchOnDemand/motivationFrame.avif" alt="Cuadro motivacional personalizado">
+                </div>
+            </section>
+        </section>
+
+        <!-- Challenges Section -->
+        <section class="challenges-section">
+            <h2>Desafíos y Aprendizajes</h2>
+            <p>A pesar de los esfuerzos y el interés generado por los productos diseñados por IA, las únicas ventas realizadas fueron de los artículos diseñados manualmente. Esto sugirió que, aunque la innovación era atractiva, los consumidores aún preferían diseños tradicionales o que necesitaban más tiempo para adaptarse a la idea de adquirir productos creados por inteligencia artificial...</p>
+        </section>
+
+        <!-- Conclusion Section -->
+        <section class="conclusion-section">
+            <h2>Conclusión y Reflexión</h2>
+            <p>Finalmente, el proyecto quedó en pausa, pero la experiencia proporcionó valiosas lecciones sobre el uso de tecnologías emergentes en modelos de negocio...</p>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2024 Merch On Demand | Proyecto de IA</p>
+    </footer>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+
+body {
+    background-color: #0D0D2B; /* Fondo oscuro para resaltar el neón */
+    color: #E4E4FC;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.8;
+}
+
+h1, h2 {
+    font-family: 'KG Tangled Regular', sans-serif;
+    text-align: center;
+    color: #E4E4FC;
+}
+
+h1 {
+    font-size: 5em;
+    color: #8A2BE2; /* Morado neón */
+}
+
+h2 {
+    font-size: 3em;
+    color: #00FFFF; /* Azul neón */
+}
+
+p {
+    font-size: 1.5em;
+    text-align: center;
+    color: #B0B0E0;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+.header-image {
+    display: block;
+    margin: 20px auto;
+    width: 70%;
+    border: 3px solid #8A2BE2;
+    box-shadow: 0px 0px 30px 5px #8A2BE2; /* Efecto neón */
+}
+
+.hstack-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.hstack-images img {
+    width: 45%;
+    border: 2px solid #00FFFF;
+    box-shadow: 0px 0px 30px 5px #00FFFF;
+}
+
+.download-button {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 15px 30px;
+    background-color: #6200ea; /* Color morado */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.download-button:hover {
+    background-color: #3700b3; /* Efecto hover */
+}
+
+.steam-machine-section {
+    text-align: center; /* Center contents in the section */
+}
+
+.left-align-container {
+    text-align: left;
+    padding: 20px;
+    background-color: #0D0D2B;
+    color: #E4E4FC;
+    width: 100vw; /* Ocupa todo el ancho */
+    box-sizing: border-box;
+}
+
+h2 {
+    color: #00FFFF;
+    margin-top: 30px;
+    text-align: left;
+    font-size: 2.5em;
+}
+
+p {
+    font-size: 1.5em;
+    text-align: left;
+    color: #B0B0E0;
+    margin: 20px auto;
+    width: 100%; /* Esto hará que ocupe todo el ancho */
+    max-width: none; /* Elimina la limitación de ancho */
+}
+
+.back-button-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.back-btn {
+    background-color: transparent;
+    color: #BB86FC; /* Color morado brillante */
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid #BB86FC; /* Borde morado brillante */
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 15px rgba(187, 134, 252, 0.5); /* Sombra morada brillante */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    text-shadow: 0 0 8px rgba(187, 134, 252, 0.8); /* Texto brillante */
+}
+
+.back-btn i {
+    font-size: 18px; /* Tamaño de la flecha */
+}
+
+.back-btn:hover {
+    background-color: #BB86FC;
+    color: #1e1e1e; /* Cambia el texto a oscuro cuando esté sobre el botón */
+    transform: translateY(-3px); /* Efecto de elevación */
+    box-shadow: 0 0 25px rgba(187, 134, 252, 0.8); /* Sombra más fuerte al hacer hover */
+}

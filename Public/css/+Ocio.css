@@ -1,0 +1,213 @@
+/* Estilos Globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.back-button {
+    background-color: #ff8700;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1.2rem 4rem;
+    border-radius: 50px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.4s ease, box-shadow 0.4s ease;
+
+    /* Posicionamiento absoluto en la parte superior izquierda */
+    position: absolute;
+    top: 20px; /* Ajusta la distancia desde el borde superior */
+    left: 20px; /* Ajusta la distancia desde el borde izquierdo */
+}
+
+.back-button:hover {
+    background-color: #ffab42;
+    box-shadow: 0 5px 20px rgba(255, 165, 0, 0.5);
+}
+
+/* Ajuste de responsividad para pantallas pequeñas */
+@media (max-width: 768px), (max-height: 700px) {
+    .back-button {
+        font-size: 1.2rem; /* Reducir el tamaño del texto del botón en pantallas pequeñas */
+        padding: 0.8rem 2.5rem; /* Ajustar padding para pantallas pequeñas */
+    }
+}
+
+
+body {
+    background-color: #fff;
+    color: #333;
+    line-height: 1.7;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+header {
+    height: 100vh;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(255, 195, 113, 0.7), rgba(255, 87, 87, 0.7));
+    text-align: center;
+    position: relative;
+    scroll-snap-align: start;
+}
+
+header .header-logo {
+    width: 50%;
+    max-width: 600px;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+}
+
+header .header-logo:hover {
+    transform: scale(1.05);
+}
+
+header p {
+    font-size: 2rem;
+    color: #f0f0f0;
+    margin-top: 2rem;
+}
+
+section {
+    height: 100vh;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: start;
+}
+
+.section-content {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.section-text {
+    flex: 1;
+    text-align: right;
+}
+
+.section-text h2 {
+    font-size: 3rem;
+    color: #ff6000;
+    margin-bottom: 1rem;
+}
+
+.section-text p {
+    color: #333;
+    font-size: 1.5rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.section-image {
+    margin-left: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 12px 50px rgba(0, 0, 0, 0.4);
+    max-height: 75vh;
+    height: auto;
+    width: auto;
+}
+
+.section-images {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.section-images .section-image {
+    margin-bottom: 1rem;
+}
+
+
+
+/* Ajustes para pantallas pequeñas y para cuando el contenido es más alto que la pantalla */
+@media (max-width: 768px), (max-height: 700px) {
+    .section-content {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .section-text {
+        text-align: center;
+    }
+
+    .section-image,
+    .section-images {
+        margin-left: 0;
+        margin-top: 2rem;
+    }
+
+    .section-images {
+        align-items: center;
+    }
+
+    .section-text h2 {
+        font-size: 2.5rem;
+    }
+
+    .section-text p {
+        font-size: 1.2rem;
+    }
+
+    header .header-logo {
+        width: 80%;
+    }
+
+    header p {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+}
+
+/* Reorganización del layout si el contenido es más alto que la pantalla */
+@media (min-width: 769px) {
+    .section-content {
+        flex-wrap: wrap;
+    }
+
+    .section-content.to-column {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .section-content.to-column .section-text,
+    .section-content.to-column .section-image {
+        margin-left: 0;
+        text-align: left;
+    }
+}
+
+/* Animaciones */
+[data-aos] {
+    opacity: 0;
+    transition-property: transform, opacity;
+}
+
+[data-aos].aos-animate {
+    opacity: 1;
+}
+
+p, ul {
+    text-align: left;
+    font-size: 1.3em; /* Ajusta el tamaño de la fuente según lo que prefieras */
+    line-height: 1.6; /* Esto mejora la legibilidad */
+    color: #333; /* Asegúrate de que el color del texto sea legible */
+}
+
+h2 {
+    text-align: left;
+    font-size: 2.5em; /* Tamaño del encabezado ajustado */
+    color: #FF5722; /* Color del encabezado, ajusta según tu paleta */
+}

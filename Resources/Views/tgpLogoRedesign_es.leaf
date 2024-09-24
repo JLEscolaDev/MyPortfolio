@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Good Programming - Rediseño de Logo</title>
+    <link rel="stylesheet" href="/css/tgpLogoRedesign.css">
+</head>
+<body>
+
+    <!-- Back button -->
+    <button class="back-button" onclick="window.history.back();">Volver atrás</button>
+
+    <!-- Title and project brief description -->
+    <div class="content">
+        <h1>The Good Programming</h1>
+        <p>Este proyecto surge tras un estudio de colores sobre toda la competencia que se pudo encontrar del sector IT de programación móvil en España.</p>
+    </div>
+
+    <!-- Previous attempts section -->
+    <section class="previous-attempts">
+        <div class="left">
+            <h2>Intentos previos</h2>
+            <p>Creé una primera versión web (que ya no está activa) para presentar el proyecto al CEO de The Good Programming.</p>
+        </div>
+        <div class="right">
+            <video controls>
+                <source src="/Videos/tgp_logoRedesignOldWeb.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de videos.
+            </video>
+        </div>
+    </section>
+
+    <!-- Redesign process examples section -->
+    <section class="examples">
+        <h2>Algunos ejemplos del proceso de rediseño y pruebas de color</h2>
+        <div class="media-container">
+            <iframe src="/pdfs/TheGoodProgramming-redesign.pdf" allowfullscreen></iframe>
+            <img src="/gifs/TheGoodProgramming.gif" alt="Proceso de rediseño y pruebas de color">
+        </div>
+    </section>
+
+    <!-- Final decision section -->
+    <section class="final-decision">
+        <p>Se decidió alejarse un poco de la jerga y los símbolos reconocibles por la gente del mundo IT relacionados con la programación y se apostó por un logo mucho más serio, fácilmente reconocible y reproducible y con una paleta de colores más reducida para facilitar merchandising e impresión.</p>
+    </section>
+
+    <!-- Final logo and carousel section -->
+    <section class="final-section">
+        <div class="logo-container">
+            <img src="/Images/TGP/tgp_finalLogo.svg" alt="Logo Final de The Good Programming">
+        </div>
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="slides">
+                    <img src="/Images/TGP/tgp_mobilesMockUp.png" alt="Mock-up Móviles">
+                    <img src="/Images/TGP/tgp_backPackMockUp.png" alt="Mock-up Mochila">
+                    <img src="/Images/TGP/tgp_cupsMockUp.png" alt="Mock-up Tazas">
+                    <img src="/Images/TGP/tgp_finalLogoBackpack.jpg" alt="Logo en Mochila">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fullscreen image modal -->
+    <div id="imageModal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <!-- JavaScript for fullscreen modal -->
+    <script>
+        // Select all images from the carousel
+        const carouselImages = document.querySelectorAll('.slides img');
+        const modal = document.getElementById('imageModal');
+        const modalImg = document.getElementById('modalImage');
+        const closeModal = document.getElementsByClassName('close')[0];
+
+        // Add click event to each image
+        carouselImages.forEach(image => {
+            image.onclick = function() {
+                modal.style.display = 'block';
+                modalImg.src = this.src;  // Display clicked image in the modal
+            };
+        });
+
+        // Close the modal on 'X' click
+        closeModal.onclick = function() {
+            modal.style.display = 'none';
+        };
+
+        // Close the modal when clicking outside the image
+        modal.onclick = function(event) {
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        };
+    </script>
+
+</body>
+</html>
