@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baretos Baratos - El Proyecto de Ocio en Zaragoza</title>
+    
+    <!-- Link the CSS file -->
+    <link rel="stylesheet" href="/css/baretosBaratos.css">
+</head>
+<body>
+    <!-- "Go Back" button -->
+    <button class="back-button" onclick="window.history.back()">Volver atrás</button>
+    
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <h1>Baretos Baratos</h1>
+            <a href="/+Ocio.leaf">
+                <img src="/Images/BaretosBaratos/masOcio.svg" alt="Logo +OCIO" class="header-logo">
+            </a>
+        </div>
+        <p>Revolucionando el Consumo de Zaragoza con Tecnología Inteligente</p>
+    </header>
+
+    <!-- Introduction Section -->
+    <section>
+        <h2>Introducción</h2>
+        <p>
+            En mi afán por explorar nuevas formas de generar ingresos pasivos con mínima intervención humana,
+            emprendí un proyecto innovador que combina la inteligencia artificial, el diseño gráfico y el comercio electrónico.
+            La idea central es crear una aplicación que centralice todas las actividades de ocio en Zaragoza,
+            permitiendo a los usuarios desde pedir un taxi hasta adquirir packs de consumiciones en locales adheridos.
+        </p>
+        <p>
+            Con esta premisa nacía Baretos Baratos, una app centrada en los bares y ocio nocturno que tras varias iteraciones de diseño
+            y ampliación del negocio se haría un rebranding hacia +OCIO, una app que podría aunar todo tipo de actividad y servicio
+            que se pudiera solicitar y/o desear en tu tiempo libre.
+        </p>
+    </section>
+
+    <!-- Concept and Ideation Section -->
+    <section>
+        <h2>Conceptualización y Diseño</h2>
+        <p>
+            Todo comenzó con una fase intensa de investigación y experimentación.
+            El objetivo era crear una solución que no solo fuera atractiva para los usuarios locales de Zaragoza,
+            sino también eficiente y moderna. A partir de la API abierta de Zaragoza,
+            pude integrar información en tiempo real sobre taxis, autobuses y otros servicios básicos.
+        </p>
+        <p>
+            Para el diseño de la interfaz, utilicé software como Figma y Adobe XD para prototipar las pantallas
+            y definir el flujo de usuario. Cada pantalla fue cuidadosamente optimizada para proporcionar una experiencia
+            de usuario sin fricciones, tanto en modo claro como en oscuro.
+        </p>
+    </section>
+
+    <!-- Features Section -->
+    <section>
+        <h2>Características Principales</h2>
+        <ul>
+            <li>Consulta de horarios de autobuses y taxis en tiempo real.</li>
+            <li>Compra de packs de consumiciones y ofertas exclusivas en locales adheridos.</li>
+            <li>Promociones especiales en bares y restaurantes locales.</li>
+            <li>Modo claro y oscuro para adaptarse a las preferencias visuales del usuario.</li>
+            <li>Integración con la API abierta de Zaragoza para información fiable y actualizada.</li>
+        </ul>
+    </section>
+
+    <!-- App Development Process Section -->
+    <section>
+        <h2>Proceso de Desarrollo</h2>
+        <p>
+            El desarrollo de la aplicación requirió una cuidadosa planificación y ejecución.
+            Opté por un enfoque ágil, utilizando SwiftUI para el diseño de las interfaces y Vapor para la gestión del backend.
+            El objetivo principal era minimizar la intervención manual, utilizando procesos automatizados para gestionar transacciones,
+            las notificaciones en tiempo real y la integración con la API de Zaragoza.
+        </p>
+        <p>
+            También se integraron servicios como Firebase para la gestión de usuarios y las autenticaciones,
+            y Stripe para las compras de packs y promociones, facilitando el flujo de dinero entre los usuarios y los locales.
+        </p>
+    </section>
+
+    <!-- Screenshots Section -->
+    <section>
+        <h2>Diseño de Interfaz y Capturas de Pantalla</h2>
+        <p>A continuación, algunas capturas de las pantallas clave dentro de la aplicación:</p>
+
+        <div class="screenshot-container">
+            <!-- Primera imagen a la izquierda -->
+            <div class="screenshot-item">
+                <div class="image-wrapper-left">
+                    <img src="/Images/BaretosBaratos/Login.png" alt="Interfaz de Inicio de Sesión" class="screenshot-image">
+                </div>
+                <div class="screenshot-title-left">
+                    <h3>Interfaz de Inicio de Sesión</h3>
+                </div>
+            </div>
+
+            <!-- Segunda imagen a la derecha -->
+            <div class="screenshot-item">
+                <div class="screenshot-title-right">
+                    <h3>Aplicación complementaria para los locales adheridos</h3>
+                    <p>Escaneos para entrega de pedidos, inventariado de ofertas, control de pedidos y cobros, etc.</p>
+                </div>
+                <div class="image-wrapper-right">
+                    <img src="/Images/BaretosBaratos/SideAppForBusinessManagement.png" alt="Gestión de Productos" class="screenshot-image">
+                </div>
+            </div>
+
+            <!-- Tercera imagen a la izquierda -->
+            <div class="screenshot-item">
+                <div class="image-wrapper-left">
+                    <img src="/Images/BaretosBaratos/UserOffers.png" alt="Seguimiento de Ventas" class="screenshot-image">
+                </div>
+                <div class="screenshot-title-left">
+                    <h3>Sección de venta a usuario directo</h3>
+                </div>
+            </div>
+
+            <!-- Cuarta imagen a la derecha -->
+            <div class="screenshot-item">
+                <div class="screenshot-title-right">
+                    <h3>Embudo de ventas y jugabilidad aplicada al pago</h3>
+                </div>
+                <div class="image-wrapper-right">
+                    <img src="/Images/BaretosBaratos/SalesFunnelAndGamifiedPayment.png" alt="Escaneo QR" class="screenshot-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marketing and User Experience Section -->
+    <section class="marketing-section">
+        <div class="marketing-content">
+            <h2>Estrategias de Marketing y Experiencia de Usuario</h2>
+            <p>
+                El plan para comercializar la aplicación incluía la implementación de estrategias de SEO y marketing digital para captar usuarios interesados en tecnología y ocio. Se planteó la creación de anuncios optimizados en redes sociales, junto con promociones exclusivas para los primeros usuarios que descargaran la app. Además, estaba prevista una colaboración cercana con los locales adheridos para garantizar una experiencia de usuario fluida, con ofertas atractivas que motivaran el uso de la aplicación.
+            </p>
+            <p>
+                La interfaz está diseñada para ser intuitiva, ofreciendo una experiencia fluida tanto para residentes como para turistas.
+                Los usuarios pueden navegar entre las promociones de bares, pedir taxis o consultar horarios de autobuses en cuestión de segundos.
+            </p>
+        </div>
+        <div class="marketing-video">
+            <video controls>
+                <source src="/Videos/Ocio!VideoDemo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+    <!-- Business Intent and Growth Plan Section -->
+    <section>
+        <h2>Intención de Negocio y Plan de Crecimiento</h2>
+        <p>
+            La idea detrás de Baretos Baratos no es solo proporcionar una aplicación útil para los usuarios,
+            sino también convertirse en una plataforma rentable para los bares y restaurantes de Zaragoza.
+            A medida que la base de usuarios crece, la intención es integrar más servicios y colaboraciones con locales en toda la ciudad.
+        </p>
+        <p>
+            En el futuro, se planea expandir a otras ciudades, replicando el modelo de Zaragoza en otros centros urbanos con una
+            oferta diversa de ocio nocturno y social.
+        </p>
+    </section>
+
+    <!-- Branding Section -->
+    <section>
+        <h2>Identidad de Marca y Logotipo</h2>
+        <p>
+            La marca refleja la energía y el dinamismo del ocio zaragozano. Aquí puedes ver el diseño del logotipo,
+            que simboliza la unión entre tecnología y diversión:
+        </p>
+        <embed src="/pdfs/OcioZaragozaLogoDesign.pdf" width="600" height="400" type="application/pdf">
+    </section>
+
+    <!-- Conclusion Section -->
+    <section>
+        <h2>Conclusión</h2>
+        <p>
+            Baretos Baratos es la solución perfecta para maximizar la experiencia de ocio en Zaragoza. Gracias a la integración de datos en tiempo real, promociones locales y una experiencia visual personalizada, esta app se convierte en una herramienta indispensable para los amantes del ocio en la ciudad. ¡Descárgala ya y empieza a disfrutar!
+        </p>
+        <p>
+            Sin embargo, durante el estudio de viabilidad del negocio, nos encontramos con obstáculos legales que afectaron la gestión de los cobros. El modelo de negocio se basaba en cobrar un pequeño porcentaje de cada venta, pero sumando el porcentaje de la integración bancaria o pasarela de pagos, más el 21% de IVA, el esquema dejaba de ser rentable. Además, al no poder operar como una figura legal comisionista, los servicios tendrían que facturarse, lo que añadía otra capa de complejidad.
+        </p>
+        <p>
+            El problema se agravaba al no poder retener los pagos en nuestras cuentas hasta final de mes para luego transferir la parte correspondiente al cliente. Este modelo habría generado desconfianza entre los locales, afectando su flujo de caja. Por otro lado, cobrar el total y luego facturarles resultaría en la percepción de que se les está restando dinero ya adquirido.
+        </p>
+        <p>
+            Por todas estas razones, y debido a las limitaciones de la legislación española actual, se concluyó que el modelo de negocio no era económicamente viable.
+        </p>
+        <button class="next-button" onclick="location.href='/+Ocio'">Ver el reboot del proyecto +OCIO</button>
+    </section>
+</body>
+</html>

@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baretos Baratos - The Leisure Project in Zaragoza</title>
+    
+    <!-- Link the CSS file -->
+    <link rel="stylesheet" href="/css/baretosBaratos.css">
+</head>
+<body>
+    <!-- "Go Back" button -->
+    <button class="back-button" onclick="window.history.back()">Go Back</button>
+    
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <h1>Baretos Baratos</h1>
+            <a href="/+Ocio.leaf">
+                <img src="/Images/BaretosBaratos/masOcio.svg" alt="Logo +OCIO" class="header-logo">
+            </a>
+        </div>
+        <p>Revolutionizing Zaragoza's Consumption with Smart Technology</p>
+    </header>
+
+    <!-- Introduction Section -->
+    <section>
+        <h2>Introduction</h2>
+        <p>
+            In my quest to explore new ways of generating passive income with minimal human intervention, 
+            I embarked on an innovative project that combines artificial intelligence, graphic design, and e-commerce. 
+            The central idea is to create an application that centralizes all leisure activities in Zaragoza, 
+            allowing users to do everything from ordering a taxi to purchasing drink packages at affiliated venues.
+        </p>
+        <p>
+            With this premise, Baretos Baratos was born, an app focused on bars and nightlife, which after several design iterations 
+            and business expansion, rebranded into +OCIO, an app that could encompass all kinds of activities and services one could request 
+            and/or desire during their free time.
+        </p>
+    </section>
+    <!-- Concept and Ideation Section -->
+        <section>
+            <h2>Conceptualization and Design</h2>
+            <p>
+                Everything began with an intense phase of research and experimentation.
+                The goal was to create a solution that not only appealed to local users in Zaragoza,
+                but also one that was efficient and modern. Using Zaragoza's open API,
+                I was able to integrate real-time information on taxis, buses, and other basic services.
+            </p>
+            <p>
+                For the interface design, I used software like Figma and Adobe XD to prototype screens
+                and define the user flow. Each screen was carefully optimized to provide a frictionless user experience,
+                both in light and dark modes.
+            </p>
+        </section>
+
+        <!-- Features Section -->
+        <section>
+            <h2>Main Features</h2>
+            <ul>
+                <li>Real-time bus and taxi schedules.</li>
+                <li>Purchase of drink packs and exclusive offers at affiliated venues.</li>
+                <li>Special promotions in local bars and restaurants.</li>
+                <li>Light and dark mode to suit the user's visual preferences.</li>
+                <li>Integration with Zaragoza's open API for reliable and updated information.</li>
+            </ul>
+        </section>
+
+        <!-- App Development Process Section -->
+        <section>
+            <h2>Development Process</h2>
+            <p>
+                The development of the application required careful planning and execution.
+                I opted for an agile approach, using SwiftUI for interface design and Vapor for backend management.
+                The main goal was to minimize manual intervention, utilizing automated processes to manage transactions,
+                real-time notifications, and integration with the Zaragoza API.
+            </p>
+            <p>
+                Services like Firebase were also integrated for user management and authentication,
+                and Stripe for pack and promotion purchases, facilitating the flow of money between users and venues.
+            </p>
+        </section>
+
+        <!-- Screenshots Section -->
+        <section>
+            <h2>Interface Design and Screenshots</h2>
+            <p>Below are some key screenshots from the application:</p>
+
+            <div class="screenshot-container">
+                <!-- First image on the left -->
+                <div class="screenshot-item">
+                    <div class="image-wrapper-left">
+                        <img src="/Images/BaretosBaratos/Login.png" alt="Login Interface" class="screenshot-image">
+                    </div>
+                    <div class="screenshot-title-left">
+                        <h3>Login Interface</h3>
+                    </div>
+                </div>
+
+                <!-- Second image on the right -->
+                <div class="screenshot-item">
+                    <div class="screenshot-title-right">
+                        <h3>Complementary App for Affiliated Venues</h3>
+                        <p>Scans for order delivery, offer inventory, order and payment control, etc.</p>
+                    </div>
+                    <div class="image-wrapper-right">
+                        <img src="/Images/BaretosBaratos/SideAppForBusinessManagement.png" alt="Product Management" class="screenshot-image">
+                    </div>
+                </div>
+
+                <!-- Third image on the left -->
+                <div class="screenshot-item">
+                    <div class="image-wrapper-left">
+                        <img src="/Images/BaretosBaratos/UserOffers.png" alt="Sales Tracking" class="screenshot-image">
+                    </div>
+                    <div class="screenshot-title-left">
+                        <h3>Direct User Sales Section</h3>
+                    </div>
+                </div>
+
+                <!-- Fourth image on the right -->
+                <div class="screenshot-item">
+                    <div class="screenshot-title-right">
+                        <h3>Sales Funnel and Gamified Payment</h3>
+                    </div>
+                    <div class="image-wrapper-right">
+                        <img src="/Images/BaretosBaratos/SalesFunnelAndGamifiedPayment.png" alt="QR Scan" class="screenshot-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Marketing and User Experience Section -->
+        <section class="marketing-section">
+            <div class="marketing-content">
+                <h2>Marketing Strategies and User Experience</h2>
+                <p>
+                    The plan to market the application included implementing SEO and digital marketing strategies to attract users interested in technology and leisure. The idea was to create optimized ads on social media, along with exclusive promotions for early app downloaders. In addition, close collaboration with affiliated venues was planned to ensure a smooth user experience, with attractive offers that incentivized app usage.
+                </p>
+                <p>
+                    The interface is designed to be intuitive, offering a smooth experience for both residents and tourists.
+                    Users can navigate through bar promotions, order taxis, or check bus schedules in seconds.
+                </p>
+            </div>
+            <div class="marketing-video">
+                <video controls>
+                    <source src="/Videos/Ocio!VideoDemo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+
+        <!-- Business Intent and Growth Plan Section -->
+        <section>
+            <h2>Business Intent and Growth Plan</h2>
+            <p>
+                The idea behind Baretos Baratos is not only to provide a useful application for users,
+                but also to become a profitable platform for bars and restaurants in Zaragoza.
+                As the user base grows, the intention is to integrate more services and collaborations with venues across the city.
+            </p>
+            <p>
+                In the future, there are plans to expand to other cities, replicating the Zaragoza model in other urban centers with a
+                diverse nightlife and social offering.
+            </p>
+        </section>
+       <!-- Branding Section -->
+        <section>
+            <h2>Brand Identity and Logo</h2>
+            <p>
+                The brand reflects the energy and dynamism of Zaragoza's nightlife. Here you can see the logo design,
+                which symbolizes the union between technology and fun:
+            </p>
+            <embed src="/pdfs/OcioZaragozaLogoDesign.pdf" width="600" height="400" type="application/pdf">
+        </section>
+
+        <!-- Conclusion Section -->
+        <section>
+            <h2>Conclusion</h2>
+            <p>
+                Baretos Baratos is the perfect solution to maximize the leisure experience in Zaragoza. Thanks to the integration of real-time data, local promotions, and a personalized visual experience, this app becomes an indispensable tool for leisure lovers in the city. Download it now and start enjoying!
+            </p>
+            <p>
+                However, during the business feasibility study, we encountered legal obstacles that affected payment management. The business model relied on charging a small percentage of each sale, but adding the percentage of the banking integration or payment gateway, plus the 21% VAT, made the scheme unprofitable. Furthermore, not being able to operate as a legal commission agent, services would have to be invoiced, adding another layer of complexity.
+            </p>
+            <p>
+                The problem worsened by not being able to hold payments in our accounts until the end of the month to then transfer the corresponding part to the client. This model would have generated distrust among venues, affecting their cash flow. On the other hand, collecting the total and then invoicing them would have resulted in the perception that we were deducting money they had already acquired.
+            </p>
+            <p>
+                For all these reasons, and due to the limitations of current Spanish legislation, it was concluded that the business model was not economically viable.
+            </p>
+            <button class="next-button" onclick="location.href='/+Ocio'">See the +Ocio Project Reboot</button>
+        </section>
+    </body>
+</html>

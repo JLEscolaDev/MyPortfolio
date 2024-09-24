@@ -1,0 +1,305 @@
+/* Reset */
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.8;
+    background-color: #ffffff;
+    color: #333333;
+}
+
+/* Estilos para el botón de volver atrás */
+.back-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #ff6000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #ff8700;
+    transform: scale(1.05);
+}
+
+
+/* Sección de contenido */
+.content {
+    padding: 40px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.content h1 {
+    margin-top: 0;
+    font-size: 3.5rem;
+    color: #ff5733;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.content p {
+    font-size: 1.4rem;
+    color: #555;
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+/* Sección de Intentos previos */
+.previous-attempts {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    background-color: #ffffff;
+}
+
+.previous-attempts .left,
+.previous-attempts .right {
+    flex: 1;
+    min-width: 300px;
+    margin: 0 20px;
+}
+
+.previous-attempts .left {
+    padding-right: 20px;
+}
+
+.previous-attempts .right {
+    padding-left: 20px;
+}
+
+.previous-attempts h2 {
+    font-size: 2.5rem;
+    color: #ff5733;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+.previous-attempts video {
+    width: 80%;
+    height: auto;
+    max-height: 45vh;
+    margin: 20px auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Sección de ejemplos */
+.examples {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.examples h2 {
+    padding: 20px;
+    background-color: #ff5733;
+    color: #fff;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+}
+
+.examples .media-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.examples .media-container iframe,
+.examples .media-container img {
+    width: 100%;
+    height: 90vh;
+    margin: 20px 0;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.examples .media-container iframe {
+    border: 2px solid #ff5733;
+}
+
+.examples .media-container img {
+    object-fit: cover;
+}
+
+/* Sección de la decisión final */
+.final-decision {
+    padding: 4rem 2rem;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.final-decision p {
+    font-size: 1.4rem;
+    color: #555;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.7;
+}
+
+/* Sección final con logo y carrusel */
+.final-section {
+    padding: 4rem 2rem;
+    background-color: #fff;
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.logo-container img {
+    max-width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.logo-container img:hover {
+    transform: scale(1.1);
+}
+
+.carousel-container {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    transition: transform 0.5s ease;
+    padding: 20px; /* Añadido padding para evitar clipeo */
+}
+
+.slides img {
+    width: 300px;
+    padding: 10px; /* Padding alrededor de cada imagen para evitar clipeo en hover */
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer; /* Cursor de pointer para indicar que se puede hacer clic */
+}
+
+.slides img:hover {
+    transform: scale(1.05);
+}
+
+/* Botones de navegación del carrusel */
+.carousel-container::before, .carousel-container::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    z-index: 1;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.carousel-container::before {
+    left: 10px;
+}
+
+.carousel-container::after {
+    right: 10px;
+}
+
+.carousel-container::before:hover, .carousel-container::after:hover {
+    background-color: rgba(255, 87, 87, 0.8);
+}
+
+/* Modal para pantalla completa */
+#imageModal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+#imageModal img {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 800px;
+}
+
+#imageModal .close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#imageModal .close:hover {
+    color: #ff5733;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .previous-attempts {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .previous-attempts .left, .previous-attempts .right {
+        padding: 0;
+        flex: none;
+        width: 100%;
+    }
+
+    .media-container iframe, .media-container img {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .carousel-container::before, .carousel-container::after {
+        display: none;
+    }
+
+    .content h1 {
+        font-size: 2.5rem;
+    }
+
+    .previous-attempts h2 {
+        font-size: 2rem;
+    }
+
+    .examples h2 {
+        font-size: 1.8rem;
+    }
+
+    .final-decision p {
+        font-size: 1.2rem;
+    }
+}

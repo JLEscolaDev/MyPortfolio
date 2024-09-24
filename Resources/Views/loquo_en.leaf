@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOQUO iOS App</title>
+
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="/css/loquo.css">
+</head>
+<body>
+    <!-- Back button -->
+    <div class="back-button-container">
+        <button onclick="goBack()" class="back-btn">
+            <i class="fas fa-arrow-left"></i> Go Back
+        </button>
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back(); // Go back to the previous page
+        }
+    </script>
+    
+    <div class="image-container">
+        <img src="/images/loquo-logo.png" alt="LOQUO Logo">
+        <div class="button-container">
+            <a href="/downloads/LOQUO-TFG-JoseLuisEscolá.pdf" class="download-btn" download>Download LOQUO Documentation PDF</a>
+        </div>
+    </div>
+
+    <!-- Key elements of the app -->
+    <div class="key-elements-container">
+        <h2>Key elements include:</h2>
+        <ul class="key-elements-list">
+            <li>API/Server connection for data management.</li>
+            <li>Use of CoreData for managing local data, synced with a central database.</li>
+            <li>Creation of user interfaces and features for PUSH notifications, user management, and chat.</li>
+            <li>Development based on agile methodologies like SCRUM and Kanban, ensuring efficient teamwork and iterative improvement.</li>
+        </ul>
+    </div>
+</body>
+</html>

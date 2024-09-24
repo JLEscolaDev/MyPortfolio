@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto VR Emprendimiento</title>
+
+    <!-- Link the CSS file -->
+    <link rel="stylesheet" href="/css/VR_EntrepreneurshipProject.css">
+</head>
+<body>
+    
+    <div class="image-container">
+        <!-- Back button -->
+        <div class="back-button-container">
+            <button onclick="goBack()" class="back-btn">
+                <i class="fas fa-arrow-left"></i> Volver atrás
+            </button>
+        </div>
+
+        <script>
+            // Function to go back to the previous page
+            function goBack() {
+                window.history.back(); // Back to previous page
+            }
+        </script>
+        <!-- Project image -->
+        <img src="/images/VR-Ceste-EntrepreneurshipProject.webp" alt="Imagen del Proyecto VR Emprendimiento">
+        <div class="button-container">
+            <!-- Download button for the project proposal PDF -->
+            <a href="/downloads/JoseLuisEscolá-Emprendimiento.pdf" class="download-btn" download>Descargar PDF con la propuesta de proyecto</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>+Ocio - Reinventando el Ocio Social</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="/css/+Ocio.css">
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header id="header">
+        <button class="back-button" onclick="location.href='/'">Volver atrás</button>
+        <img src="/Images/+Ocio/+OcioMainLogo.svg" alt="Logo" class="header-logo" onclick="location.href='/Ocio.leaf'">
+        <p data-aos="fade-up" data-aos-delay="200">Una Nueva Plataforma para Dinamizar la Vida Social</p>
+    </header>
+
+    <!-- Sections with Original Content -->
+    <main>
+        <!-- Introducción -->
+        <section id="intro" data-aos="fade-up">
+            <div class="section-content">
+                <div class="section-text">
+                    <h2>Historia y Motivación</h2>
+                    <p>
+                        +Ocio nace de un giro radical en el proyecto original "Baretos Baratos". Inicialmente, la idea se centraba en crear una plataforma para bares y restaurantes, pero tras un profundo estudio de viabilidad y las limitaciones legales y financieras que surgieron, el concepto se transformó por completo.
+                    </p>
+                        
+                    <p>
+                        Ante los problemas económicos que enfrentan los jóvenes hoy en día, con salarios bajos, alquileres altos y el coste de vida en constante ascenso, decidimos replantear la app para convertirla en un potenciador social asequible. Con +Ocio, buscamos ofrecer una plataforma que facilite la organización de planes de bajo coste y eventos sociales, fomentando la interacción y la creación de experiencias compartidas entre los jóvenes.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- New Vision -->
+        <section id="vision" data-aos="fade-up">
+            <div class="section-content">
+                <div class="section-text">
+                    <h2>Nueva Visión</h2>
+                    <p>
+                        La app ahora se centra en ofrecer a los usuarios una herramienta para encontrar, organizar y compartir planes sociales accesibles. Los usuarios pueden navegar a través de una variedad de actividades, ya sea para explorar su ciudad, organizar salidas o participar en eventos colectivos.
+                    </p>
+                    <img src="/Images/+Ocio/leisure_planning.png" alt="Imagen de Introducción" class="section-image">
+                    <p>
+                        +Ocio ahora tiene dedicada toda una sección a la planificación en tu calendario de las diferentes propuestas de planes. Ya sean planes fijos o propuestas pendientes de aceptar, el usuario puede sacar las ideas de la app y hacer un seguimiento de cuán sociable está siendo (a veces necesitamos ver plasmados hechos que ya conocemos para ser conscientes de la realidad y en este caso, esto podría evitar tendencias sociales nocivas que pueden derivar en épocas oscuras y depresiones).
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Plans and Activity Cards -->
+        <section id="plans" data-aos="fade-up">
+            <div class="section-content">
+                <div class="section-text">
+                    <h2>Planes y Cartas de Actividades</h2>
+                    <p>
+                        Los planes se muestran en formato de cartas, permitiendo a los usuarios seleccionar y guardar los que les interesen. Estos pueden incluir desde acampadas hasta pequeños eventos sociales en la ciudad.
+                    </p>
+                </div>
+                <img src="/Images/+Ocio/mainViewWithPlansCards.png" alt="Vista principal con cartas de planes" class="section-image">
+            </div>
+        </section>
+
+        <!-- Quick Actions -->
+        <section id="quick-actions" data-aos="fade-up">
+            <div class="section-content">
+                <div class="section-text">
+                    <h2>Acciones Rápidas</h2>
+                    <p>
+                        La interfaz permite a los usuarios descubrir un número limitado de planes y deberá hacer scroll al más puro estilo Tinder para ver todos los planes.
+                        ¡Cuantos más planes hagas, más tarjetas de planes podrás ver cada día! Al descubrir un nuevo plan podrás:
+                    </p>
+                    <ul>
+                        <li>Pasarlo/quemarlo</li>
+                        <li>Planearlo en el calendario proponiendo un sitio, una hora y con qué usuarios de la app quieres compartir tu tiempo.</li>
+                        <li>Compartir el plan a través de otras plataformas (para la gente que aún no use +Ocio)</li>
+                        <li>Guardar el plan porque aún no estás seguro y quieres ver algunas tarjetas más. Solo podrás tener 3 planes guardados, así que deberás hacer los planes realidad o quemar el plan y asumir que nunca lo haréis.</li>
+                    </ul>
+                </div>
+                <img src="/Images/+Ocio/cardActions.png" alt="Acciones rápidas de la tarjeta de plan" class="section-image">
+            </div>
+        </section>
+
+        <!-- Shortcuts and Selection -->
+        <section id="shortcuts" data-aos="fade-up">
+            <div class="section-content">
+                <div class="section-text">
+                    <h2>Selección de Atajos</h2>
+                    <p>
+                        Los usuarios pueden personalizar su experiencia seleccionando los atajos que mejor se ajusten a sus necesidades, ya sea transporte, ocio, alojamiento, salud, etc.
+                    </p>
+                </div>
+                <img src="/Images/+Ocio/myCityContentTypShortcutSelection.png" alt="Atajos en la sección Mi Ciudad" class="section-image">
+                <img src="/Images/+Ocio/shortcutSelection.png" alt="Selección de atajos de contenido" class="section-image">
+            </div>
+        </section>
+
+        <!-- Explore by Location and People -->
+        <section id="explore" data-aos="fade-up">
+            <div class="section-content">
+                <div class="section-text">
+                    <h2>Explorar por Ubicación y Personas</h2>
+                    <p>
+                        +Ocio también permite a los usuarios buscar eventos y actividades basadas en ubicaciones geográficas, creando una experiencia inmersiva y personalizada para explorar la ciudad y conectar con otros usuarios o ver dónde se han posteado las últimas publicaciones de los influencers de la ciudad e ir tú mismo a probar ese plan.
+                    </p>
+                </div>
+                <img src="/Images/+Ocio/planFindingByPeopleAndLocations.png" alt="Buscar por personas y ubicaciones" class="section-image">
+            </div>
+        </section>
+
+        <!-- My City and Settings -->
+        <section id="my-city" data-aos="fade-up">
+            <div class="section-content">
+                <div class="section-text">
+                    <h2>Mi Ciudad</h2>
+                    <p>
+                        Los usuarios pueden acceder a información local relevante, como noticias o eventos populares en su ciudad, además de configurar accesos directos a diferentes secciones de la app y tener un apartado adicional donde se crearán álbumes personalizables con fotos de cada evento que se propuso a través de la app y finalmente se llevó a cabo. A final de año, tendremos un recap de todo lo que hemos hecho con nuestros seres queridos.
+                    </p>
+                </div>
+                <div class="section-images">
+                    <img src="/Images/+Ocio/myCityOptionsAndInfo.png" alt="Opciones y atajos en Mi Ciudad" class="section-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- Conclusion -->
+        <section class="conclusion" data-aos="fade-up">
+            <div class="section-content">
+                <div class="section-text">
+                    <h2>Conclusión</h2>
+                    <p>
+                        +Ocio se ha transformado en una app diseñada para los tiempos actuales, donde la necesidad de conexión social y la accesibilidad económica se encuentran en equilibrio. Con ella, los jóvenes pueden planificar, descubrir y participar en eventos y actividades sociales, revitalizando su vida social sin romper el banco.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Scripts -->
+    <!-- AOS.js -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1200,
+            once: true,
+        });
+    </script>
+
+</body>
+</html>

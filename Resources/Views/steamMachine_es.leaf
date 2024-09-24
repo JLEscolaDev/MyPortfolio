@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto SteamMachine</title>
+    <link rel="stylesheet" href="/css/steamMachine.css">
+</head>
+<body>
+    <!-- Back button -->
+    <div class="back-button-container">
+        <button onclick="goBack()" class="back-btn">
+            <i class="fas fa-arrow-left"></i> Volver atrás
+        </button>
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back(); // Go back to the previous page
+        }
+    </script>
+
+    <!-- Main SteamMachine Section -->
+    <section class="steam-machine-section">
+        <h1>SteamMachine</h1>
+        <img src="/Images/SteamMachine3.png" alt="SteamMachine" class="header-image">
+
+        <p>
+            SteamMachine es un proyecto de vanguardia que combina lo último en diseño neon con tecnología de hardware innovadora. Con su forma piramidal futurista y efectos de iluminación impresionantes, este proyecto ejemplifica la combinación de creatividad e ingeniería.
+        </p>
+
+        <h2>Explora el Diseño</h2>
+        <!-- Download Button -->
+        <a href="Downloads/SteamMachine.blend.zip" download class="download-button">Descargar Proyecto SteamMachine</a>
+
+        <div class="hstack-images">
+            <img src="/Images/SteamMachine2.jpg" alt="Vista lateral de SteamMachine">
+            <img src="/Images/SteamMachine.jpg" alt="Vista trasera de SteamMachine">
+        </div>
+
+        <div class="left-align-container">
+            <h2>Paso 1. Concepto de Negocio</h2>
+            <p>
+                SteamMachine fue concebido para seguir un modelo de marketing similar al de Nespresso, donde una máquina visualmente atractiva se vende al costo, mientras que los ingresos se generan a través de la venta de consumibles, en este caso, líquidos para vapear. El proyecto estaba dirigido a discotecas, ofreciendo un reemplazo para las shishas tradicionales con una alternativa más llamativa, rápida y segura. El enfoque estaba en construir contratos a largo plazo alrededor de la venta de consumibles, mejorando la presencia en redes sociales y asegurando una eficiencia operativa con un tiempo mínimo de instalación.
+            </p>
+
+            <h2>Paso 2. Proceso de Diseño</h2>
+            <p>
+                Utilizando Blender, exploramos varias opciones de diseño para compartimentar los materiales, optimizar el espacio y asegurar un manejo seguro de líquidos y baterías. Experimentamos con diferentes estructuras y ubicaciones de LED para crear una experiencia inmersiva, centrándonos en la seguridad y la estética.
+            </p>
+
+            <h2>Paso 3. Desafíos y Descubrimiento de Mercado</h2>
+            <p>
+                Durante la fase de investigación de mercado, descubrimos un fabricante a gran escala que producía dispositivos similares destinados a reemplazar las shishas tradicionales con alternativas más económicas basadas en vapor. Aunque su enfoque difería ligeramente del nuestro, la coincidencia de objetivos nos llevó a reconsiderar nuestra estrategia de producción.
+            </p>
+
+            <h2>Paso 4. Redirección del Proyecto</h2>
+            <p>
+                Dada la disponibilidad de estos dispositivos, cambiamos nuestro enfoque hacia aprovechar su tecnología mediante la compra a granel, lo que nos permitió centrarnos en el branding y mejorar su diseño para ofrecer una experiencia de producto más premium y personalizable.
+            </p>
+
+            <h2>Último paso. Abandono del Proyecto</h2>
+            <p>
+                A pesar del cambio de dirección, los desafíos regulatorios en torno a los productos de vapeo, junto con el aumento de la legislación anti-vape, presentaron riesgos significativos. La combinación de altos costos regulatorios y cambios en las leyes llevó a la difícil decisión de detener el proyecto.
+            </p>
+        </div>
+    </section>
+
+</body>
+</html>

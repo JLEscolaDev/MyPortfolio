@@ -1,0 +1,340 @@
+/* Estilos Generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+    background-color: #000000;
+    color: #f0db4f;
+    padding: 2rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+header p {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+/* Contenedor del header */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Espacio entre el título y el logo */
+}
+
+/* Estilos para el logo */
+.header-logo {
+    width: 150px;  /* Ajusta el tamaño del SVG según prefieras */
+    height: auto;
+    margin-top: -10px; /* Ajusta este valor para mover el logo hacia arriba */
+    transition: transform 0.2s ease-in-out;
+}
+
+.header-logo:hover {
+    transform: scale(1.05);  /* Efecto de hover si es necesario */
+}
+
+/* Secciones Generales */
+section {
+    padding: 2rem 4rem;
+}
+
+section h2 {
+    color: #f0db4f;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    border-bottom: 2px solid #f0db4f;
+    padding-bottom: 0.5rem;
+}
+
+section p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+/* Lista de Características */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #ffde00;
+    color: #000;
+    padding: 0.75rem;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Diseño de Imágenes */
+img {
+    margin: 1rem;
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+/* Estilos de PDF embebido */
+/* Estilo de PDF embebido actualizado */
+embed {
+    display: block;
+    margin: 2rem auto;
+    padding-left: 2rem;  /* Añade padding para compensar el margen izquierdo */
+    padding-right: 6rem; /* Añade padding para compensar el margen derecho */
+    width: calc(100vw - 4rem); /* Resta el padding del ancho total */
+    height: 66vh; /* Ocupa 2/3 del alto de la pantalla */
+}
+
+
+
+/* Estilos de Fondo */
+body {
+    background-color: #ffffff;
+}
+
+header {
+    background: #000000 url('/Images/OcioZaragozaLogoDesign.jpg') no-repeat center center/cover;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 4rem;
+    color: #ffde00;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-top: 0.5rem;
+}
+
+/* Estilo de Texto de Conclusión */
+section:last-of-type {
+    background-color: #000;
+    color: #fff; /* Cambia el color a blanco para mejor legibilidad */
+    padding: 2rem 4rem;
+    text-align: center;
+}
+
+section:last-of-type h2 {
+    color: #ffde00;
+}
+
+section:last-of-type p {
+    font-size: 1.2rem;
+    color: #f0f0f0; /* Texto de la conclusión en un color claro */
+}
+
+
+/* Sección de Capturas */
+div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+div img {
+    width: 300px;
+    height: auto;
+    margin: 0.5rem;
+    transition: transform 0.2s ease-in-out;
+}
+
+div img:hover {
+    transform: scale(1.05);
+}
+
+/* Enlaces y Estilos Interactivos */
+a {
+    color: #ffde00;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para alternar imágenes */
+.screenshot-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2rem;
+}
+
+.screenshot-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image-wrapper-left,
+.image-wrapper-right {
+    flex: 2;
+}
+
+.screenshot-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.screenshot-image:hover {
+    transform: scale(1.05);
+}
+
+/* Títulos alineados sin fondo */
+.screenshot-title-left {
+    flex: 1;
+    padding-right: 2rem;
+    text-align: right;
+}
+
+.screenshot-title-right {
+    flex: 1;
+    padding-left: 2rem;
+    text-align: left;
+}
+
+.screenshot-title-left h3,
+.screenshot-title-right h3 {
+    font-size: 1.5rem;
+    color: black;
+}
+
+/* Alinear la imagen y el título para cada lado */
+.image-wrapper-left {
+    order: 1;
+}
+
+.screenshot-title-left {
+    order: 2;
+}
+
+.screenshot-title-right {
+    order: 1;
+}
+
+.image-wrapper-right {
+    order: 2;
+}
+
+.marketing-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem; /* Espacio entre el texto y el video */
+    padding: 2rem;
+}
+
+.marketing-content {
+    flex: 2;
+}
+
+.marketing-video {
+    flex: 1;
+    max-width: 75%; /* Ajusta el ancho del video al 75% del tamaño normal */
+}
+
+.marketing-video video {
+    width: 100%;
+    height: auto;
+    max-width: 300px; /* Limita el tamaño del vídeo */
+    border-radius: 10px;
+}
+
+/* Botón redondo genérico */
+button {
+    background-color: #ffde00;
+    color: #000;
+    border: none;
+    border-radius: 50px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e6c900;
+}
+
+button:active {
+    background-color: #ccad00;
+}
+
+/* Botón "Volver atrás" */
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #ffde00;
+    color: #000;
+    border: none;
+    border-radius: 50px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #e6c900;
+}
+
+.back-button:active {
+    background-color: #ccad00;
+}
+
+/* Botón más grande y color anaranjado para el final */
+.next-button {
+    background-color: #ff9500;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    padding: 1rem 2rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 2rem auto;
+}
+
+.next-button:hover {
+    background-color: #e68500;
+}
+
+.next-button:active {
+    background-color: #cc6f00;
+}
