@@ -148,7 +148,11 @@
         <div class="projects-grid">
             #for(project in projects):
             <div class="project-item" data-aos="zoom-in" data-aos-duration="800">
+                #if(project.isExternal):
+                <a href="#(project.link)" target="_blank" rel="noopener">
+                #else:
                 <a href="#(project.link)?lang=#(language)">
+                #endif
                     <img src="#(project.image)" alt="Project image of #(project.name)" class="project-image">
                     <h3>#(project.name)</h3>
                     <p>#(project.description)</p>
