@@ -8,6 +8,8 @@
     <!-- Link to AOS CSS -->
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/styles.css">
+    <!-- Mobile-only overrides (igual que en EN) -->
+    <link rel="stylesheet" media="(max-width: 768px)" href="/css/mobile.css">
 
     <!-- Link to FontAwesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -300,7 +302,6 @@
             </form>
         </div>
     </div>
-</section>
 
     <!-- Link to AOS JS -->
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
