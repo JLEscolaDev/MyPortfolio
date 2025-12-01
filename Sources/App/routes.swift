@@ -46,7 +46,13 @@ func routes(_ app: Application) throws {
         ),
         Project(name: "+Ocio iOS App Design", description: "+Ocio evolved from Baretos Baratos, initially focused on bars and restaurants, but after a viability study, it shifted towards being an app for low-cost social plans. In response to economic hardship and increasing social isolation among young people, +Ocio offers a way to boost social life. The app helps users plan affordable activities, allowing the new generation to connect and enjoy themselves without worrying about financial constraints.", image: "/Images/+Ocio/+OcioMainLogo.svg", link: "+Ocio"),
         Project(name: "The Good Programming - Logo redesign", description: "During my tenure at The Good Programming, I recognized an opportunity to enhance the company’s brand image by redesigning its original logo, created in the early days of the business. Leveraging my interest in design and marketing, I developed a proposal that reflects the company’s evolution and current values. This project allowed me to reciprocate the confidence placed in me as a developer by contributing a strategic renewal to the visual identity beyond my usual responsibilities.", image: "/Images/TGP/tgp_officialLogo.png", link: "tgpLogoRedesign"),
-        Project(name: "Doom Kanban VisionOS App", description: "Doom Kanban Board is a gamified task management app using an interactive Kanban board with Apple Game Center integration. Users can track tasks, compete on leaderboards, unlock achievements in a 3D space, and experience a virtual office reacting to game events. It features immersive simulations with particles generated in Reality Composer Pro and a fictional chat between the PM and developer.", image: "/Images/DoomKanban/DoomKanbanPreview.webp", link: "doomKanban")
+        Project(name: "Doom Kanban VisionOS App", description: "Doom Kanban Board is a gamified task management app using an interactive Kanban board with Apple Game Center integration. Users can track tasks, compete on leaderboards, unlock achievements in a 3D space, and experience a virtual office reacting to game events. It features immersive simulations with particles generated in Reality Composer Pro and a fictional chat between the PM and developer.", image: "/Images/DoomKanban/DoomKanbanPreview.webp", link: "doomKanban"),
+        Project(
+            name: "Fortune Magnet",
+            description: "A web where you can keep track of your small daily victories to see your progress while you feel that you are stuck and have no luck.",
+            image: "/Images/FortuneMagnet/FortuneMagnetLogo.png",
+            link: "https://fortune-magnet.vercel.app/"
+        )
     ]
 
     // Middleware to handle language selection (this should be added to the app configuration)
