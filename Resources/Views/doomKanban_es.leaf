@@ -3,94 +3,185 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Merch On Demand | Emprendimiento con IA</title>
-    <link rel="stylesheet" href="/css/merchOnDemand.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Tablero Kanban Doom</title>
+    <link rel="stylesheet" href="/css/doomKanban.css">
+    <!-- Fuente para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- Header Section with Hero Image -->
-    <header class="hero-section">
-        <div class="overlay">
-            <h1>Emprendimiento con IA en Diseño y Comercio Electrónico</h1>
-            <p>Mi viaje hacia la creación de un negocio automatizado usando IA</p>
-        </div>
-    </header>
-
-    <!-- Back Button -->
+    <!-- Botón de volver -->
     <div class="back-button-container">
         <button onclick="goBack()" class="back-btn">
             <i class="fas fa-arrow-left"></i> Volver atrás
         </button>
     </div>
 
-    <!-- Main Content -->
-    <main>
-        <section class="introduction">
-            <h2>Mi Historia de Emprendimiento</h2>
-            <p>En mi afán por explorar nuevas formas de generar ingresos pasivos con mínima intervención humana, emprendí un proyecto innovador que combinaba inteligencia artificial, diseño gráfico y comercio electrónico. La idea central era aprovechar las capacidades emergentes de las IA generativas de imágenes, como DALL·E y Midjourney, para crear diseños únicos y atractivos que pudieran aplicarse a una variedad de productos destinados a la venta directa al consumidor.</p>
-        </section>
-
-        <!-- Phase Section -->
-        <section class="phase-section">
-            <h2>Fase de Conceptualización y Diseño</h2>
-            <p>El proceso comenzó con una intensa fase de investigación y experimentación. Utilicé DALL·E y Midjourney a través de Discord para generar imágenes base, explorando diferentes estilos y conceptos que pudieran resonar con los consumidores. Estas herramientas de IA me permitieron producir rápidamente una amplia gama de diseños, desde patrones abstractos hasta ilustraciones temáticas.</p>
-            <p>Para refinar y personalizar estos diseños, incorporé el uso de software de diseño gráfico como Adobe Illustrator, Adobe XD y GIMP...</p>
-
-            <!-- Productos diseñados con IA -->
-            <section class="ai-products">
-                <h3>Diseños Generados por IA</h3>
-                <div class="product-gallery">
-                    <img src="/Images/merchOnDemand/rectangleAbstractFrame.jpg" alt="Cuadro abstracto generado por IA">
-                    <img src="/Images/merchOnDemand/blackAndWhite-Cup.jpg" alt="Vaso en blanco y negro con diseño IA">
-                    <img src="/Images/merchOnDemand/cup.jpg" alt="Vaso con patrones de colores generados por IA">
-                </div>
-            </section>
-        </section>
-
-        <!-- Automated System Section -->
-        <section class="system-section">
-            <h2>Desarrollo de un Sistema Automatizado</h2>
-            <p>Con los diseños listos, el siguiente paso fue establecer un sistema automatizado que minimizara la intervención humana en la producción y distribución. Opté por Printful, una plataforma de impresión bajo demanda que se integra fácilmente con tiendas en línea y se encarga de la producción, el embalaje y el envío de los productos al cliente final. Esto eliminó la necesidad de gestionar inventario o logística, alineándose perfectamente con mi objetivo de crear una fuente de ingresos pasivos...</p>
-        </section>
-
-        <!-- Marketing Strategy Section -->
-        <section class="marketing-section">
-            <h2>Estrategias de Marketing y Ampliación del Catálogo</h2>
-            <p>Conscientes de que algunos consumidores podrían ser reticentes a comprar productos diseñados por IA, decidí diversificar el catálogo. Utilicé mis habilidades en Adobe Illustrator y GIMP para crear diseños manuales, incluyendo frases motivacionales y gráficos simples pero atractivos...</p>
-
-            <!-- Productos diseñados manualmente -->
-            <section class="manual-products">
-                <h3>Diseños Manuales para Ampliar el Catálogo</h3>
-                <div class="product-gallery">
-                    <img src="/Images/merchOnDemand/cap.jpg" alt="Gorra diseñada manualmente">
-                    <img src="/Images/merchOnDemand/doItForHer.avif" alt="Marco motivacional diseñado manualmente">
-                    <img src="/Images/merchOnDemand/motivationFrame.avif" alt="Cuadro motivacional personalizado">
-                </div>
-            </section>
-        </section>
-
-        <!-- Challenges Section -->
-        <section class="challenges-section">
-            <h2>Desafíos y Aprendizajes</h2>
-            <p>A pesar de los esfuerzos y el interés generado por los productos diseñados por IA, las únicas ventas realizadas fueron de los artículos diseñados manualmente. Esto sugirió que, aunque la innovación era atractiva, los consumidores aún preferían diseños tradicionales o que necesitaban más tiempo para adaptarse a la idea de adquirir productos creados por inteligencia artificial...</p>
-        </section>
-
-        <!-- Conclusion Section -->
-        <section class="conclusion-section">
-            <h2>Conclusión y Reflexión</h2>
-            <p>Finalmente, el proyecto quedó en pausa, pero la experiencia proporcionó valiosas lecciones sobre el uso de tecnologías emergentes en modelos de negocio...</p>
-        </section>
-    </main>
-
-    <!-- Footer Section -->
-    <footer>
-        <p>© 2024 Merch On Demand | Proyecto de IA</p>
-    </footer>
-
     <script>
         function goBack() {
-            window.history.back(); // Return to the previous page
+            window.history.back();
         }
     </script>
+
+    <div class="main-container">
+        <!-- Sección de introducción -->
+        <section class="neumorphic">
+            <h1>Tablero Kanban Doom</h1>
+            <p>
+                ¡Bienvenido a Tablero Kanban Doom! Un juego divertido e interactivo para gestionar tus tareas usando un tablero Kanban, inspirado en el caos y la estrategia de una jornada de trabajo. 💀
+            </p>
+
+            <video controls>
+                <source src="/Videos/KanbanBoardTeaserVideo.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de vídeo.
+            </video>
+        </section>
+
+        <!-- ¿Cómo funciona? -->
+        <section class="neumorphic">
+            <h2>¿Cómo funciona?</h2>
+            <p>
+                En Tablero Kanban Doom, gestionas las tareas moviéndolas por cuatro columnas hasta marcarlas como «Hecho».
+            </p>
+            <!-- Imagen ahora más grande y debajo del texto -->
+            <img src="/Images/DoomKanban/KanbanBoard.png" alt="Tablero Kanban Doom" class="header-image-large">
+        </section>
+
+        <!-- Explicación de columnas y ejecución de sprints -->
+        <section class="left-align-container content-with-image">
+            <div class="text-content">
+                <h2>🛠️ ¿Cómo funcionan las tarjetas Kanban?</h2>
+                <h3>1. Por hacer</h3>
+                <p>Aquí están todas las tareas nuevas. Las tareas empiezan aquí, esperando tu atención.</p>
+
+                <h3>2. En progreso</h3>
+                <p>
+                    Cuando empieces a trabajar en una tarea, muévela a esta columna. Representa las tareas en las que estás trabajando activamente.
+                    Cuando aparezca una casilla de verificación en la esquina superior derecha de la tarjeta, podrás marcarla como completada y moverla a la siguiente fase.
+                </p>
+
+                <h3>3. Pruebas</h3>
+                <p>
+                    Cuando una tarea está completa pero necesita revisión, muévela a esta columna. Aquí revisas o pruebas tu trabajo.
+                    En esta fase puedes encontrarte con bugs, marcados con una bandera roja 🚩. Para solucionarlo, haz clic en la tarjeta; se abrirá un chat con el desarrollador correspondiente para arreglar el error.
+                    Una vez resuelto, la bandera desaparecerá y la tarea se completará automáticamente.
+                </p>
+
+                <h3>4. Hecho</h3>
+                <p>
+                    Cuando finalicen las pruebas y la tarea esté completamente terminada, podrás moverla a la columna Hecho. ¡Enhorabuena! 🎉
+                    Debes mover todas las tareas a Hecho antes de que se agote el tiempo restante de cada una para ganar puntos extra.
+                </p>
+            </div>
+            <img src="/Images/DoomKanban/runningSprintsAndProjectsLayout.png" alt="Ejecución de sprints" class="running-sprints-image">
+        </section>
+
+        <!-- Reglas -->
+        <section class="left-align-container">
+            <h2>🎮 Reglas</h2>
+            <p>
+                Debes mover todas las tareas desde la columna «Por hacer» a «Hecho» usando arrastrar y soltar (drag and drop).
+            </p>
+
+            <p>
+                <strong>Avisos:</strong> Si fallas una tarea, recibirás un ⚠️ aviso de tu jefe. Si acumulas tres avisos en el mismo proyecto, te despedirán. A partir de la tercera ronda, tu jefe empezará a desconfiar y te observará en ciertos intervalos, representado por un ojo rojo en la sección de avisos. Si cometes un error mientras estás bajo vigilancia, la penalización se duplicará. ¡Ten cuidado!
+            </p>
+
+            <p>
+                <strong>Sprints y Proyectos:</strong> En la parte izquierda de la pantalla verás la siguiente tarea a completar, en función del proyecto y sprint en el que estés trabajando. Es posible tener varios proyectos activos a la vez, y cada proyecto tiene varios sprints y tareas. Debes completarlos todos.
+            </p>
+
+            <p>
+                <strong>Habilidades:</strong> En la parte derecha de la pantalla tendrás acceso a tres habilidades que te ayudarán a completar tareas más rápido:
+            </p>
+            <ul>
+                <li>Habilidad para ver la siguiente tarea pendiente.</li>
+                <li>Habilidad para reducir a la mitad las tareas restantes.</li>
+                <li>Habilidad para completar tareas automáticamente durante un corto periodo.</li>
+            </ul>
+
+            <p>
+                Hay tareas marcadas con una bandera roja 🚩 que debes arreglar, y algunas tareas importantes están marcadas con un signo de exclamación rojo ❗️, que dan el doble de puntos, pero también el doble de avisos si fallas.
+            </p>
+        </section>
+
+        <!-- Habilidades con imagen más pequeña -->
+        <section class="left-align-container content-with-image">
+            <div class="text-content">
+                <h2>💡 Habilidades</h2>
+                <p>
+                    En el lado derecho del tablero dispones de tres habilidades que te ayudarán a completar tareas más rápido:
+                </p>
+                <ul>
+                    <li>Ver la siguiente tarea pendiente</li>
+                    <li>Reducir a la mitad las tareas restantes</li>
+                    <li>Completar tareas automáticamente</li>
+                </ul>
+            </div>
+            <img src="/Images/DoomKanban/skills.png" alt="Habilidades" class="skills-image-small">
+        </section>
+
+        <!-- Avisos -->
+        <section class="left-align-container">
+            <h2>Avisos</h2>
+            <p>Si fallas una tarea, recibirás un ⚠️ aviso. Acumula tres avisos en el mismo proyecto y te despedirán.</p>
+            <img src="/Images/DoomKanban/warnings.png" alt="Avisos" class="warning-image">
+        </section>
+
+        <!-- Clasificación + Game Center -->
+        <section class="left-align-container">
+            <h2>Clasificación + Apple Game Center</h2>
+            <p>Usa Game Center para competir con tus amigos y escalar en la clasificación hasta convertirte en el número 1. Consigue logros mientras juegas, que podrás ver representados en un espacio 3D personalizado para una mejor experiencia.</p>
+            
+            <div class="hstack-images">
+                <img src="/Images/DoomKanban/leaderboard.png" alt="Clasificación" class="half-width-image">
+                <img src="/Images/DoomKanban/archivements.png" alt="Logros" class="half-width-image">
+            </div>
+            
+            <h2>Ejemplos de logros</h2>
+            <div class="hstack-images">
+                <img src="/Images/DoomKanban/Unlock3Skills_CoinArchivement.png" alt="Habilidad para ganar" class="half-width-image">
+                <img src="/Images/DoomKanban/Move2000Tasks-CoinArchivement.png" alt="Efecto 2000" class="half-width-image">
+            </div>
+        </section>
+
+        <!-- Simulación con visionOS -->
+        <section class="left-align-container">
+            <h2>Conversación simulada con visionOS</h2>
+            <p>Hemos implementado un adorno en visionOS para simular una conversación ficticia entre el Product Manager y el Desarrollador. En esta conversación, el PM le pide al desarrollador que arregle urgentemente un bug, usando una interfaz de chat que refuerza la narrativa del juego. Esta funcionalidad añade una capa extra de inmersión y realismo al entorno de desarrollo y presión que los desarrolladores afrontan en su día a día.</p>
+            
+            <p>Este adorno de chat simula una conversación realista e integra el entorno 3D de visionOS para mejorar la experiencia del usuario, aportando un toque divertido mientras gestionas tareas en el Kanban. ¡Se siente como si recibieras instrucciones en tiempo real mientras juegas!</p>
+            
+            <div class="hstack-images">
+                <img src="/Images/DoomKanban/fakeMobileChatWithTheDeveloperAskingForFix.png" alt="Chat con el desarrollador" class="half-width-image">
+            </div>
+        </section>
+
+        <!-- Características -->
+        <section id="features" class="neumorphic">
+            <h2>🔧 Características</h2>
+            <ul>
+                <li>Tablero Kanban interactivo con arrastrar y soltar</li>
+                <li>Cuatro columnas de tareas: Backlog, En progreso, Revisión y Hecho</li>
+                <li>Chat móvil ficticio y pool de títulos de tareas con toques de humor</li>
+                <li>Experiencia de oficina inmersiva que reacciona al juego (p. ej., oficina en llamas)</li>
+                <li>Clasificación conectada a iCloud y Game Center</li>
+                <li>Representación 3D de los logros de Game Center</li>
+                <li>Música dentro del juego</li>
+            </ul>
+            <img src="/Images/DoomKanban/officeFire.png" alt="Tablero Kanban Doom" class="header-image-large">
+        </section>
+
+        <!-- Nota final sobre intentos iniciales con Unity -->
+        <section class="left-align-container">
+            <h2>Primer intento de partículas de fuego con Unity</h2>
+            <p>En un intento inicial utilicé Unity para generar las partículas de fuego y humo necesarias para la simulación de la oficina en llamas. Sin embargo, me encontré con un problema: no podía exportar las partículas generadas en Unity como un archivo .fbx que luego pudiera convertirse a formato USD mediante Reality Converter.</p>
+            
+            <p>Debido a esta limitación, opté por usar <strong>Reality Composer Pro</strong>, que me permitió generar de forma nativa las partículas de fuego y humo e integrarlas con el modelo 3D de la oficina. Esta herramienta fue clave para lograr una experiencia más fluida y asegurar que las simulaciones de fuego y humo se comportaran como se esperaba.</p>
+            
+            <div class="hstack-images">
+                <img src="/Images/DoomKanban/previousAttemptsForFireParticlesUsingUnity.png" alt="Intentos con Unity" class="half-width-image">
+            </div>
+        </section>
+    </div>
 </body>
 </html>
