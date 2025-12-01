@@ -5,19 +5,139 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Good Programming - Rediseño de Logo</title>
     <link rel="stylesheet" href="/css/tgpLogoRedesign.css">
+    <!-- Overrides móviles del sitio -->
+    <link rel="stylesheet" media="(max-width: 768px)" href="/css/mobile.css">
+    <!-- Iconos (por si se usan en botones) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- Ajustes móviles específicos de esta página (no afectan escritorio) -->
+    <style>
+    @media (max-width: 768px) {
+        /* Botón volver con área segura para no solapar contenido */
+        .back-button {
+            position: sticky;
+            top: 8px;
+            z-index: 40;
+            padding: 8px 12px;
+            font-size: .95rem;
+            margin: 8px;
+        }
+
+        /* Intro */
+        .content { padding: 0 12px; }
+        .content h1 { font-size: clamp(1.3rem, 6vw, 1.6rem); margin: 8px 0; text-align: center; }
+        .content p  { font-size: 1rem; line-height: 1.5; text-align: center; }
+
+        /* Intentos previos: apilar columnas */
+        .previous-attempts {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 12px;
+            padding: 12px;
+        }
+        .previous-attempts .left h2 { 
+            font-size: clamp(1.05rem, 4.8vw, 1.25rem);
+            margin: 0 0 6px; 
+            text-align: center;
+        }
+        .previous-attempts .left p { margin: 0; line-height: 1.45; }
+
+        /* Centrar el vídeo y evitar cortes */
+        .previous-attempts .right {
+            display: grid;
+            justify-items: center;
+        }
+        .previous-attempts .right video {
+            width: 100%;
+            max-width: 640px;
+            aspect-ratio: 16/9;
+            height: auto;
+            display: block;
+            object-fit: contain;
+            border-radius: 12px;
+        }
+
+        /* Ejemplos: PDF + GIF apilados y centrados */
+        .examples { padding: 12px; }
+        .examples h2 { 
+            font-size: clamp(1.05rem, 4.8vw, 1.25rem); 
+            margin: 0 0 8px; 
+            text-align: center; 
+        }
+        .media-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 12px;
+        }
+        .media-container iframe,
+        .media-container img {
+            width: 94%;
+            max-width: 640px;
+            margin: 0 auto;
+            display: block;
+            border-radius: 12px;
+        }
+        .media-container iframe {
+            aspect-ratio: 3/4;
+            height: auto;
+            border: none;
+        }
+        .media-container img {
+            height: auto;
+            object-fit: contain;
+        }
+
+        /* Texto de decisión */
+        .final-decision { padding: 12px; }
+        .final-decision p { margin: 0; line-height: 1.5; }
+
+        /* Logo final y carrusel */
+        .final-section { padding: 12px; }
+        .logo-container img { width: 94%; max-width: 640px; height: auto; object-fit: contain; display: block; margin: 0 auto; }
+
+        .carousel-container { overflow: hidden; }
+        .carousel { width: 100%; }
+        .slides {
+            display: grid;
+            grid-auto-flow: row;
+            gap: 12px;
+        }
+        .slides img { width: 94%; max-width: 640px; height: auto; object-fit: contain; border-radius: 12px; margin: 0 auto; }
+
+        /* Modal a pantalla completa */
+        #imageModal { display: none; position: fixed; inset: 0; background: rgba(0,0,0,.85); z-index: 100; }
+        #imageModal .modal-content {
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+            display: block;
+            margin: auto;
+        }
+        #imageModal .close {
+            position: absolute;
+            right: 12px;
+            top: 8px;
+            font-size: 2rem;
+            color: #fff;
+            line-height: 1;
+            cursor: pointer;
+        }
+    }
+    </style>
 </head>
 <body>
 
-    <!-- Back button -->
+    <!-- Botón Volver -->
     <button class="back-button" onclick="window.history.back();">Volver atrás</button>
 
-    <!-- Title and project brief description -->
+    <!-- Título y descripción breve del proyecto -->
     <div class="content">
         <h1>The Good Programming</h1>
         <p>Este proyecto surge tras un estudio de colores sobre toda la competencia que se pudo encontrar del sector IT de programación móvil en España.</p>
     </div>
 
-    <!-- Previous attempts section -->
+    <!-- Sección intentos previos -->
     <section class="previous-attempts">
         <div class="left">
             <h2>Intentos previos</h2>
@@ -31,7 +151,7 @@
         </div>
     </section>
 
-    <!-- Redesign process examples section -->
+    <!-- Sección de ejemplos del rediseño -->
     <section class="examples">
         <h2>Algunos ejemplos del proceso de rediseño y pruebas de color</h2>
         <div class="media-container">
@@ -40,12 +160,12 @@
         </div>
     </section>
 
-    <!-- Final decision section -->
+    <!-- Sección decisión final -->
     <section class="final-decision">
         <p>Se decidió alejarse un poco de la jerga y los símbolos reconocibles por la gente del mundo IT relacionados con la programación y se apostó por un logo mucho más serio, fácilmente reconocible y reproducible y con una paleta de colores más reducida para facilitar merchandising e impresión.</p>
     </section>
 
-    <!-- Final logo and carousel section -->
+    <!-- Sección logo final y carrusel -->
     <section class="final-section">
         <div class="logo-container">
             <img src="/Images/TGP/tgp_finalLogo.svg" alt="Logo Final de The Good Programming">
@@ -62,34 +182,30 @@
         </div>
     </section>
 
-    <!-- Fullscreen image modal -->
+    <!-- Modal de imagen a pantalla completa -->
     <div id="imageModal">
         <span class="close">&times;</span>
         <img class="modal-content" id="modalImage">
     </div>
 
-    <!-- JavaScript for fullscreen modal -->
+    <!-- JavaScript para el modal -->
     <script>
-        // Select all images from the carousel
         const carouselImages = document.querySelectorAll('.slides img');
         const modal = document.getElementById('imageModal');
         const modalImg = document.getElementById('modalImage');
         const closeModal = document.getElementsByClassName('close')[0];
 
-        // Add click event to each image
         carouselImages.forEach(image => {
             image.onclick = function() {
                 modal.style.display = 'block';
-                modalImg.src = this.src;  // Display clicked image in the modal
+                modalImg.src = this.src;
             };
         });
 
-        // Close the modal on 'X' click
         closeModal.onclick = function() {
             modal.style.display = 'none';
         };
 
-        // Close the modal when clicking outside the image
         modal.onclick = function(event) {
             if (event.target === modal) {
                 modal.style.display = 'none';
