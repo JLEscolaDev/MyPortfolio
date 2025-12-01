@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto SteamMachine</title>
     <link rel="stylesheet" href="/css/steamMachine.css">
+    <!-- Overrides móviles -->
+    <link rel="stylesheet" media="(max-width: 768px)" href="/css/mobile.css">
+    <!-- Iconos (para el botón de volver) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
-    <!-- Back button -->
+    <!-- Botón Volver -->
     <div class="back-button-container">
         <button onclick="goBack()" class="back-btn">
             <i class="fas fa-arrow-left"></i> Volver atrás
@@ -16,11 +20,11 @@
 
     <script>
         function goBack() {
-            window.history.back(); // Go back to the previous page
+            window.history.back(); // Volver a la página anterior
         }
     </script>
 
-    <!-- Main SteamMachine Section -->
+    <!-- Sección principal SteamMachine -->
     <section class="steam-machine-section">
         <h1>SteamMachine</h1>
         <img src="/Images/SteamMachine3.png" alt="SteamMachine" class="header-image">
@@ -30,8 +34,8 @@
         </p>
 
         <h2>Explora el Diseño</h2>
-        <!-- Download Button -->
-        <a href="Downloads/SteamMachine.blend.zip" download class="download-button">Descargar Proyecto SteamMachine</a>
+        <!-- Botón de descarga -->
+        <a href="/Downloads/SteamMachine.blend.zip" download class="download-button">Descargar Proyecto SteamMachine</a>
 
         <div class="hstack-images">
             <img src="/Images/SteamMachine2.jpg" alt="Vista lateral de SteamMachine">

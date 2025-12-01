@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SteamMachine Project</title>
     <link rel="stylesheet" href="/css/steamMachine.css">
+    <!-- Mobile-only overrides -->
+    <link rel="stylesheet" media="(max-width: 768px)" href="/css/mobile.css">
+    <!-- Icons (used by the back button) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
     <!-- Back button -->
@@ -31,7 +35,7 @@
 
         <h2>Explore the Design</h2>
         <!-- Download Button -->
-        <a href="Downloads/SteamMachine.blend.zip" download class="download-button">Download Steam Machine Project</a>
+        <a href="/Downloads/SteamMachine.blend.zip" download class="download-button">Download Steam Machine Project</a>
 
         <div class="hstack-images">
             <img src="/Images/SteamMachine2.jpg" alt="SteamMachine Side View">
