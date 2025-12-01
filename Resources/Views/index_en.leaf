@@ -159,7 +159,7 @@
         
         <div class="skills-row full-width">
             <div class="skills-column full">
-                <h4>Version Control</h4>
+                <h4>This Demo Web</h4>
                 <ul class="skills-list">
                     <li><i class="fas fa-laptop-code"></i>This web project is a custom solution made with Vapor and Leaf, hosted on Heroku using Buildpacks (which are similar to Docker and abstract you from worrying about the underlying operating system and configurations).</li>
                 </ul>
