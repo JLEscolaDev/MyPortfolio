@@ -5,10 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Merch On Demand | Emprendimiento con IA</title>
     <link rel="stylesheet" href="/css/merchOnDemand.css">
+    <!-- Overrides móviles del sitio -->
+    <link rel="stylesheet" media="(max-width: 768px)" href="/css/mobile.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- Ajustes móviles específicos de esta página (no afectan escritorio) -->
+    <style>
+    @media (max-width: 768px) {
+        /* Botón volver visible y con margen seguro */
+        .back-button-container { position: sticky; top: 8px; z-index: 40; padding: 8px; }
+        .back-btn { padding: 8px 12px; font-size: .95rem; }
+
+        /* Hero: reducir altura, centrar textos y evitar solape con el botón */
+        .hero-section {
+            min-height: 48vh;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        .hero-section .overlay {
+            padding: 72px 12px 16px; /* aire superior para no quedar bajo el botón */
+            text-align: center;
+        }
+        .hero-section h1 {
+            font-size: clamp(1.35rem, 7vw, 1.9rem);
+            line-height: 1.15;
+            margin: 0 0 8px;
+            word-break: break-word;
+        }
+        .hero-section p {
+            font-size: clamp(1rem, 4.5vw, 1.1rem);
+            line-height: 1.35;
+            margin: 0;
+        }
+
+        /* Espaciado general y títulos de secciones */
+        main { padding: 12px 8px; }
+        section { padding: 12px 0; }
+        .introduction h2,
+        .phase-section h2,
+        .system-section h2,
+        .marketing-section h2,
+        .challenges-section h2,
+        .conclusion-section h2 {
+            font-size: clamp(1.15rem, 5.6vw, 1.5rem);
+            margin: 0 0 8px;
+            text-align: center;
+        }
+        .introduction p,
+        .phase-section p,
+        .system-section p,
+        .marketing-section p,
+        .challenges-section p,
+        .conclusion-section p {
+            font-size: 1rem;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        /* Subtítulos de bloques */
+        .ai-products h3,
+        .manual-products h3 {
+            font-size: clamp(1.05rem, 4.8vw, 1.25rem);
+            margin: 12px 0 8px;
+            text-align: center;
+        }
+
+        /* Galerías: 1 columna en móvil, imágenes sin recortes */
+        .product-gallery {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+        .product-gallery img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: contain;
+            border-radius: 12px;
+        }
+
+        /* Footer */
+        footer { padding: 16px 8px; text-align: center; }
+    }
+    </style>
 </head>
 <body>
-    <!-- Header Section with Hero Image -->
+    <!-- Sección de cabecera con imagen hero -->
     <header class="hero-section">
         <div class="overlay">
             <h1>Emprendimiento con IA en Diseño y Comercio Electrónico</h1>
@@ -16,21 +99,21 @@
         </div>
     </header>
 
-    <!-- Back Button -->
+    <!-- Botón Volver -->
     <div class="back-button-container">
         <button onclick="goBack()" class="back-btn">
             <i class="fas fa-arrow-left"></i> Volver atrás
         </button>
     </div>
 
-    <!-- Main Content -->
+    <!-- Contenido principal -->
     <main>
         <section class="introduction">
             <h2>Mi Historia de Emprendimiento</h2>
             <p>En mi afán por explorar nuevas formas de generar ingresos pasivos con mínima intervención humana, emprendí un proyecto innovador que combinaba inteligencia artificial, diseño gráfico y comercio electrónico. La idea central era aprovechar las capacidades emergentes de las IA generativas de imágenes, como DALL·E y Midjourney, para crear diseños únicos y atractivos que pudieran aplicarse a una variedad de productos destinados a la venta directa al consumidor.</p>
         </section>
 
-        <!-- Phase Section -->
+        <!-- Fase -->
         <section class="phase-section">
             <h2>Fase de Conceptualización y Diseño</h2>
             <p>El proceso comenzó con una intensa fase de investigación y experimentación. Utilicé DALL·E y Midjourney a través de Discord para generar imágenes base, explorando diferentes estilos y conceptos que pudieran resonar con los consumidores. Estas herramientas de IA me permitieron producir rápidamente una amplia gama de diseños, desde patrones abstractos hasta ilustraciones temáticas.</p>
@@ -46,13 +129,13 @@
             </section>
         </section>
 
-        <!-- Automated System Section -->
+        <!-- Sistema automatizado -->
         <section class="system-section">
             <h2>Desarrollo de un Sistema Automatizado</h2>
             <p>Con los diseños listos, el siguiente paso fue establecer un sistema automatizado que minimizara la intervención humana en la producción y distribución. Opté por Printful, una plataforma de impresión bajo demanda que se integra fácilmente con tiendas en línea y se encarga de la producción, el embalaje y el envío de los productos al cliente final. Esto eliminó la necesidad de gestionar inventario o logística, alineándose perfectamente con mi objetivo de crear una fuente de ingresos pasivos...</p>
         </section>
 
-        <!-- Marketing Strategy Section -->
+        <!-- Marketing -->
         <section class="marketing-section">
             <h2>Estrategias de Marketing y Ampliación del Catálogo</h2>
             <p>Conscientes de que algunos consumidores podrían ser reticentes a comprar productos diseñados por IA, decidí diversificar el catálogo. Utilicé mis habilidades en Adobe Illustrator y GIMP para crear diseños manuales, incluyendo frases motivacionales y gráficos simples pero atractivos...</p>
@@ -67,20 +150,20 @@
             </section>
         </section>
 
-        <!-- Challenges Section -->
+        <!-- Desafíos -->
         <section class="challenges-section">
             <h2>Desafíos y Aprendizajes</h2>
             <p>A pesar de los esfuerzos y el interés generado por los productos diseñados por IA, las únicas ventas realizadas fueron de los artículos diseñados manualmente. Esto sugirió que, aunque la innovación era atractiva, los consumidores aún preferían diseños tradicionales o que necesitaban más tiempo para adaptarse a la idea de adquirir productos creados por inteligencia artificial...</p>
         </section>
 
-        <!-- Conclusion Section -->
+        <!-- Conclusión -->
         <section class="conclusion-section">
             <h2>Conclusión y Reflexión</h2>
             <p>Finalmente, el proyecto quedó en pausa, pero la experiencia proporcionó valiosas lecciones sobre el uso de tecnologías emergentes en modelos de negocio...</p>
         </section>
     </main>
 
-    <!-- Footer Section -->
+    <!-- Pie -->
     <footer>
         <p>© 2024 Merch On Demand | Proyecto de IA</p>
     </footer>
