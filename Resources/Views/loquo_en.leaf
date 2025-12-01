@@ -5,8 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LOQUO iOS App</title>
 
-    <!-- Link to the CSS file -->
+    <!-- Main CSS -->
     <link rel="stylesheet" href="/css/loquo.css">
+    <!-- Site-wide mobile overrides -->
+    <link rel="stylesheet" media="(max-width: 768px)" href="/css/mobile.css">
+    <!-- Icons for back button -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- Page-scoped mobile tweaks -->
+    <style>
+    @media (max-width: 768px) {
+        /* Back button */
+        .back-button-container { position: sticky; top: 8px; z-index: 30; padding: 8px; }
+        .back-btn { padding: 8px 12px; font-size: .95rem; }
+
+        /* Stack hero image and CTA vertically */
+        .image-container {
+            padding: 12px 8px;
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: stretch !important;
+            gap: 0;
+        }
+        /* The top spacing goes on the image (not on the button) */
+        .image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: contain;
+            border-radius: 12px;
+            order: 1;
+            margin-top: 56px !important;  /* espacio en la imagen */
+        }
+
+        /* Button BELOW the image, full width, without extra top margin */
+        .image-container .button-container {
+            order: 2;
+            position: static !important;
+            float: none !important;
+            inset: auto !important;
+            align-self: stretch !important;
+            margin: 16px 0 0 0 !important;  /* pequeño gap normal */
+            width: 100% !important;
+            z-index: 1 !important;
+        }
+        .download-btn {
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            padding: 12px 16px;
+            font-size: 1rem;
+        }
+
+        /* “Key elements” */
+        .key-elements-container { padding: 16px 12px; }
+        .key-elements-container h2 { font-size: clamp(1.1rem, 5.2vw, 1.35rem); margin-bottom: 10px; text-align: center; }
+        .key-elements-list { margin: 0; padding: 0; display: grid; gap: 10px; list-style: none; }
+        .key-elements-list li { padding: 12px; border-radius: 10px; font-size: 1rem; line-height: 1.45; }
+    }
+    </style>
 </head>
 <body>
     <!-- Back button -->
