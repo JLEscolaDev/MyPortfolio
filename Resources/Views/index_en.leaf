@@ -189,8 +189,34 @@
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
                     <div class="experience-column">
+                        <h4>iOS Senior Developer - iFeel</h4>
+                        <p>March 2025 - Present</p>
+                    </div>
+                    <div class="timeline-description">
+                        <ul>
+                            <li>iOS app development focused on mental health and connecting therapists with users seeking help.</li>
+                            <li>Dependency management with SPM.</li>
+                            <li>Ongoing migration from UIKit to SwiftUI (starting from XIB-based views but aiming to remove the full UIKit navigation).</li>
+                            <li>Architecture: a blend of inherited legacy code with a last-attempt VYPER approach → pivoting to MVVM with a unified Router.</li>
+                            <li>New features: SwiftUI.</li>
+                            <li>Minimum version: iOS 18.</li>
+                            <li>Starting to adopt async/await in preparation for the transition to Swift 6.</li>
+                            <li>Agile methodology with Jira, dailies, retrospectives, etc.</li>
+                            <li>Custom dependency injection via factories.</li>
+                            <li>Squad-oriented team structure.</li>
+                            <li>Integration of version control (GitLab) with Bitrise CI/CD to generate automatic builds, testing, translations, and more.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Entry 2 -->
+            <div class="timeline-entry">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="experience-column">
                         <h4>iOS Developer - The Good Programming</h4>
-                        <p>April 2022 - Present</p>
+                        <p>April 2022 - December 2024</p>
                     </div>
                     <div class="timeline-description">
                         <ul>
@@ -205,7 +231,7 @@
                 </div>
             </div>
 
-            <!-- Entry 2 -->
+            <!-- Entry 3 -->
             <div class="timeline-entry">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
@@ -225,7 +251,7 @@
                 </div>
             </div>
 
-            <!-- Entry 3 -->
+            <!-- Entry 4 -->
             <div class="timeline-entry">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
@@ -246,7 +272,7 @@
                 </div>
             </div>
 
-            <!-- Entry 4 -->
+            <!-- Entry 5 -->
             <div class="timeline-entry">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">

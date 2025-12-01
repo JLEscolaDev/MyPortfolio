@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwiftUI Offline Bingo — Demo</title>
+
+    <!-- AOS (optional for subtle fades, consistent with other pages) -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Reuse site styles -->
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" media="(max-width: 768px)" href="/css/mobile.css">
+
+    <!-- FontAwesome (if you want icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        .detail-container {
+            max-width: 1024px;
+            margin: 0 auto;
+            padding: 24px 16px 64px;
+        }
+        .detail-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+        .detail-header h1 {
+            margin: 0;
+        }
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+            background: #000;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 28px rgba(0,0,0,0.25);
+            z-index: 1; /* ensure it's above any overlay */
+        }
+        .video-wrapper video {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        .meta {
+            margin-top: 20px;
+            color: #666;
+            line-height: 1.6;
+        }
+        .features {
+            margin-top: 16px;
+            padding-left: 20px;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 12px;
+            color: #0070f3;
+            text-decoration: none;
+        }
+        .back-link:hover { text-decoration: underline; }
+
+        @media (max-width: 768px) {
+            .detail-container {
+                padding: 16px 12px 40px;
+            }
+            .detail-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 6px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Loader (optional, consistent with other pages) -->
+    <div id="loader"></div>
+
+    <!-- Language selector (optional, consistent) -->
+    <div class="language-selector">
+        <a href="/?lang=es">ES</a> | <a href="/?lang=en">EN</a>
+    </div>
+
+    <div class="detail-container" data-aos="fade-up" data-aos-duration="800">
+        <a class="back-link" href="/?lang=#(language)">
+            <i class="fas fa-arrow-left"></i>
+            Back to Home
+        </a>
+
+        <div class="detail-header">
+            <h1>SwiftUI Offline Bingo — macOS Demo</h1>
+        </div>
+
+        <!-- Remove AOS on the video wrapper to avoid any interference while testing -->
+        <div class="video-wrapper">
+            <!-- Removed poster temporarily to avoid 404s or layout issues -->
+            <video
+                controls
+                playsinline
+                preload="metadata"
+                style="width:100%; max-height:70vh; background:#000;"
+            >
+                <source src="/Videos/bingoOfflineSmallDemo.mp4" type="video/mp4">
+                Your browser does not support the video tag. 
+                <a href="/Videos/bingoOfflineSmallDemo.mp4">Open video directly</a>.
+            </video>
+        </div>
+
+        <div class="meta">
+            <p>This small macOS app offers an offline bingo experience with festive ambience and accessibility in mind.</p>
+            <ul class="features">
+                <li>Different Christmas-themed backgrounds generated with AI.</li>
+                <li>Number calling in English and Spanish using pre-generated text-to-speech audio for offline execution (targeted for nursing homes and similar environments).</li>
+                <li>Short rhymes for each number.</li>
+                <li>Background music generated with AI and preloaded.</li>
+                <li>Settings screen to disable rhymes, adjust volume, and control the reading speed of numbers.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- AOS and loader logic -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+        window.addEventListener("load", function() {
+            var loader = document.getElementById("loader");
+            if (loader) loader.style.display = "none";
+        });
+    </script>
+</body>
+</html>

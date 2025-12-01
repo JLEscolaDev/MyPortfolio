@@ -156,6 +156,18 @@
             </div>
             #endfor
         </div>
+
+        <!-- Proyecto destacado: The Cargo Lift (tarjeta manual extra) -->
+        <div class="projects-grid" style="margin-top:16px;">
+            <div class="project-item" data-aos="zoom-in" data-aos-duration="800">
+                <a href="theCargoLift?lang=#(language)">
+                    <!-- Imagen opcional: colócala en /Images/TheCargoLift/cover.webp -->
+                    <!-- <img src="/Images/TheCargoLift/cover.webp" alt="Portada de The Cargo Lift" class="project-image"> -->
+                    <h3>The Cargo Lift — Prototipo espacial</h3>
+                    <p>Interacciones espaciales con estética metálica: mapa estelar, 3D reactivo, transiciones por capas, loader personalizado y más.</p>
+                </a>
+            </div>
+        </div>
         
         <div class="skills-row full-width">
             <div class="skills-column full">
@@ -177,8 +189,34 @@
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
                     <div class="experience-column">
+                        <h4>iOS Senior Developer - iFeel</h4>
+                        <p>Marzo 2025 - Actualidad</p>
+                    </div>
+                    <div class="timeline-description">
+                        <ul>
+                            <li>Desarrollo de aplicaciones para dispositivos iOS con foco en la salud mental y la conexión entre terapeutas y usuarios que buscan ayuda</li>
+                            <li>Gestión de dependencias con SPM</li>
+                            <li>Migración constante de UIKit a SwiftUI (comenzando por vistas en Xib pero con objetivo de eliminar la navegación completa de UIKit)</li>
+                            <li>Arquitectura: Amalgama de código legazy heredado con un intento de VYPER como última opción -> Pivotando a MVVM con Router unificado </li>
+                            <li>Nuevos desarrollos: SwiftUI</li>
+                            <li>Versión mínima: iOS 18</li>
+                            <li>Comenzando a trabajar con async/await preparando la transición a swift6</li>
+                            <li>Metodología Agile con Jira, dailies, reuniones retrospectivas, etc</li>
+                            <li>Inyección de dependencias custom con factories</li>
+                            <li>Equipos de trabajo orientados a SQUADS</li>
+                            <li>Integración del control de versiones (Gitlab) con la CI/CD de Bitrise para generar builds automáticas, testing, traducciones, etc</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Entrada 2 -->
+            <div class="timeline-entry">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="experience-column">
                         <h4>iOS Developer - The Good Programming</h4>
-                        <p>Abril 2022 - Actualidad</p>
+                        <p>Abril 2022 - Diciembre 2024</p>
                     </div>
                     <div class="timeline-description">
                         <ul>
@@ -193,7 +231,7 @@
                 </div>
             </div>
 
-            <!-- Entrada 2 -->
+            <!-- Entrada 3 -->
             <div class="timeline-entry">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
@@ -213,7 +251,7 @@
                 </div>
             </div>
 
-            <!-- Entrada 3 -->
+            <!-- Entrada 4 -->
             <div class="timeline-entry">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
@@ -234,7 +272,7 @@
                 </div>
             </div>
 
-            <!-- Entrada 4 -->
+            <!-- Entrada 5 -->
             <div class="timeline-entry">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
