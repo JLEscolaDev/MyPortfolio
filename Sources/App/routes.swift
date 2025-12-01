@@ -44,59 +44,59 @@ func routes(_ app: Application) throws {
     ]
 
     // Middleware to handle language selection (this should be added to the app configuration)
-        app.middleware.use(LanguageMiddleware())
+    app.middleware.use(LanguageMiddleware())
 
-        // Main route with language parameter
-        app.get { req in
-            let language = req.selectedLanguage // Aquí obtienes "en" o "es"
-            
-            // Cambiar el template según el idioma
-            let template = "index_\(language)" // index_es o index_en
-            
-            let context = ViewContext(projects: projects, language: language)
-            
-            return req.view.render(template, context)
-        }
+    // Main route with language parameter
+    app.get { req in
+        let language = req.selectedLanguage
+        let template = "index_\(language)"
+        let context = ViewContext(projects: projects, language: language)
+        return req.view.render(template, context)
+    }
 
+    // NUEVA ruta: The Cargo Lift
+    app.get("theCargoLift") { req in
+        let language = req.selectedLanguage
+        return req.view.render("theCargoLift_\(language)")
+    }
 
-        app.get("steamMachine") { req in
-            let language = req.selectedLanguage
-            return req.view.render("steamMachine_\(language)") // Serve language-specific template
-        }
+    app.get("steamMachine") { req in
+        let language = req.selectedLanguage
+        return req.view.render("steamMachine_\(language)")
+    }
 
-        app.get("VR_EntrepreneurshipProject") { req in
-            let language = req.selectedLanguage
-            return req.view.render("VR_EntrepreneurshipProject_\(language)") // Serve language-specific template
-        }
+    app.get("VR_EntrepreneurshipProject") { req in
+        let language = req.selectedLanguage
+        return req.view.render("VR_EntrepreneurshipProject_\(language)")
+    }
 
-        // Repeat this pattern for other routes
-        app.get("loquo") { req in
-            let language = req.selectedLanguage
-            return req.view.render("loquo_\(language)")
-        }
+    app.get("loquo") { req in
+        let language = req.selectedLanguage
+        return req.view.render("loquo_\(language)")
+    }
 
-        app.get("merchOnDemand") { req in
-            let language = req.selectedLanguage
-            return req.view.render("merchOnDemand_\(language)")
-        }
+    app.get("merchOnDemand") { req in
+        let language = req.selectedLanguage
+        return req.view.render("merchOnDemand_\(language)")
+    }
 
-        app.get("baretosBaratos") { req in
-            let language = req.selectedLanguage
-            return req.view.render("baretosBaratos_\(language)")
-        }
+    app.get("baretosBaratos") { req in
+        let language = req.selectedLanguage
+        return req.view.render("baretosBaratos_\(language)")
+    }
 
-        app.get("+Ocio") { req in
-            let language = req.selectedLanguage
-            return req.view.render("+Ocio_\(language)")
-        }
+    app.get("+Ocio") { req in
+        let language = req.selectedLanguage
+        return req.view.render("+Ocio_\(language)")
+    }
 
-        app.get("tgpLogoRedesign") { req in
-            let language = req.selectedLanguage
-            return req.view.render("tgpLogoRedesign_\(language)")
-        }
+    app.get("tgpLogoRedesign") { req in
+        let language = req.selectedLanguage
+        return req.view.render("tgpLogoRedesign_\(language)")
+    }
 
-        app.get("doomKanban") { req in
-            let language = req.selectedLanguage
-            return req.view.render("doomKanban_\(language)")
-        }
+    app.get("doomKanban") { req in
+        let language = req.selectedLanguage
+        return req.view.render("doomKanban_\(language)")
+    }
 }

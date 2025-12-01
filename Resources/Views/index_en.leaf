@@ -156,6 +156,18 @@
             </div>
             #endfor
         </div>
+
+        <!-- Featured project: The Cargo Lift (manual extra card) -->
+        <div class="projects-grid" style="margin-top:16px;">
+            <div class="project-item" data-aos="zoom-in" data-aos-duration="800">
+                <a href="theCargoLift?lang=#(language)">
+                    <!-- Optional image: place one at /Images/TheCargoLift/cover.webp -->
+                    <!-- <img src="/Images/TheCargoLift/cover.webp" alt="The Cargo Lift cover" class="project-image"> -->
+                    <h3>The Cargo Lift — Spatial Prototype</h3>
+                    <p>Spatial interactions with a metallic aesthetic: stellar map, reactive 3D, layered transitions, custom loader and more.</p>
+                </a>
+            </div>
+        </div>
         
         <div class="skills-row full-width">
             <div class="skills-column full">
