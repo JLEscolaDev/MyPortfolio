@@ -5,7 +5,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Merch On Demand | AI Entrepreneurship</title>
     <link rel="stylesheet" href="/css/merchOnDemand.css">
+    <!-- Mobile overrides used across the site -->
+    <link rel="stylesheet" media="(max-width: 768px)" href="/css/mobile.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- Page-scoped mobile tweaks (keep desktop intact) -->
+    <style>
+    @media (max-width: 768px) {
+        /* Back button fixed/visible and with safe area */
+        .back-button-container { position: sticky; top: 8px; z-index: 40; padding: 8px; }
+        .back-btn { padding: 8px 12px; font-size: .95rem; }
+
+        /* Hero: reduce height, center text, avoid overlap with back button */
+        .hero-section {
+            min-height: 48vh;               /* smaller hero on mobile */
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        .hero-section .overlay {
+            padding: 72px 12px 16px;        /* top padding so it doesn't sit under the back button */
+            text-align: center;
+        }
+        .hero-section h1 {
+            font-size: clamp(1.35rem, 7vw, 1.9rem);
+            line-height: 1.15;
+            margin: 0 0 8px;
+            word-break: break-word;
+        }
+        .hero-section p {
+            font-size: clamp(1rem, 4.5vw, 1.1rem);
+            line-height: 1.35;
+            margin: 0;
+        }
+
+        /* Main sections spacing and headings */
+        main { padding: 12px 8px; }
+        section { padding: 12px 0; }
+        .introduction h2,
+        .phase-section h2,
+        .system-section h2,
+        .marketing-section h2,
+        .challenges-section h2,
+        .conclusion-section h2 {
+            font-size: clamp(1.15rem, 5.6vw, 1.5rem);
+            margin: 0 0 8px;
+            text-align: center;
+        }
+        .introduction p,
+        .phase-section p,
+        .system-section p,
+        .marketing-section p,
+        .challenges-section p,
+        .conclusion-section p {
+            font-size: 1rem;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        /* Sub-headings */
+        .ai-products h3,
+        .manual-products h3 {
+            font-size: clamp(1.05rem, 4.8vw, 1.25rem);
+            margin: 12px 0 8px;
+            text-align: center;
+        }
+
+        /* Galleries: 1 column on mobile */
+        .product-gallery {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+        .product-gallery img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: contain;    /* no cropping on small screens */
+            border-radius: 12px;
+        }
+
+        /* Footer spacing */
+        footer { padding: 16px 8px; text-align: center; }
+    }
+    </style>
 </head>
 <body>
     <!-- Header Section with Hero Image -->
