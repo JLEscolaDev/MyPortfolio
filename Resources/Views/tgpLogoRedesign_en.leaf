@@ -5,6 +5,127 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Good Programming - Logo Redesign</title>
     <link rel="stylesheet" href="/css/tgpLogoRedesign.css">
+    <!-- Site-wide mobile overrides -->
+    <link rel="stylesheet" media="(max-width: 768px)" href="/css/mobile.css">
+    <!-- Icons (for back button, if needed elsewhere) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- Page-scoped mobile tweaks (do not affect desktop) -->
+    <style>
+    @media (max-width: 768px) {
+        /* Back button with safe area so it doesn't overlap content */
+        .back-button {
+            position: sticky;
+            top: 8px;
+            z-index: 40;
+            padding: 8px 12px;
+            font-size: .95rem;
+            margin: 8px;
+        }
+
+        /* Intro */
+        .content { padding: 0 12px; }
+        .content h1 { font-size: clamp(1.3rem, 6vw, 1.6rem); margin: 8px 0; text-align: center; }
+        .content p  { font-size: 1rem; line-height: 1.5; text-align: center; }
+
+        /* Previous attempts: stack columns */
+        .previous-attempts {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 12px;
+            padding: 12px;
+        }
+        .previous-attempts .left h2 { 
+            font-size: clamp(1.05rem, 4.8vw, 1.25rem);
+            margin: 0 0 6px; 
+            text-align: center;
+        }
+        .previous-attempts .left p { margin: 0; line-height: 1.45; }
+
+        /* Center the video perfectly */
+        .previous-attempts .right {
+            display: grid;
+            justify-items: center;   /* centra el contenido horizontalmente */
+        }
+        .previous-attempts .right video {
+            width: 100%;             /* ocupa el ancho disponible del contenedor */
+            max-width: 640px;        /* límite para no estirarse demasiado */
+            aspect-ratio: 16/9;      /* mantiene proporción */
+            height: auto;
+            display: block;
+            object-fit: contain;
+            border-radius: 12px;
+        }
+
+        /* Examples: PDF + GIF stacked and responsive */
+        .examples { padding: 12px; }
+        .examples h2 { 
+            font-size: clamp(1.05rem, 4.8vw, 1.25rem); 
+            margin: 0 0 8px; 
+            text-align: center; 
+        }
+        .media-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 12px;
+        }
+        /* make embeds slightly narrower as well and centered */
+        .media-container iframe,
+        .media-container img {
+            width: 94%;
+            max-width: 640px;
+            margin: 0 auto;
+            display: block;
+            border-radius: 12px;
+        }
+        .media-container iframe {
+            aspect-ratio: 3/4;     /* readable portrait ratio on phones */
+            height: auto;
+            border: none;
+        }
+        .media-container img {
+            height: auto;
+            object-fit: contain;
+        }
+
+        /* Decision text */
+        .final-decision { padding: 12px; }
+        .final-decision p { margin: 0; line-height: 1.5; }
+
+        /* Final logo and carousel */
+        .final-section { padding: 12px; }
+        .logo-container img { width: 94%; max-width: 640px; height: auto; object-fit: contain; display: block; margin: 0 auto; }
+
+        .carousel-container { overflow: hidden; }
+        .carousel { width: 100%; }
+        .slides {
+            display: grid;
+            grid-auto-flow: row;
+            gap: 12px;
+        }
+        .slides img { width: 94%; max-width: 640px; height: auto; object-fit: contain; border-radius: 12px; margin: 0 auto; }
+
+        /* Fullscreen modal: fit to screen */
+        #imageModal { display: none; position: fixed; inset: 0; background: rgba(0,0,0,.85); z-index: 100; }
+        #imageModal .modal-content {
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+            display: block;
+            margin: auto;
+        }
+        #imageModal .close {
+            position: absolute;
+            right: 12px;
+            top: 8px;
+            font-size: 2rem;
+            color: #fff;
+            line-height: 1;
+            cursor: pointer;
+        }
+    }
+    </style>
 </head>
 <body>
 
