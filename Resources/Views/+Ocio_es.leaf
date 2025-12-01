@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -7,8 +6,84 @@
     <title>+Ocio - Reinventando el Ocio Social</title>
     <!-- Styles -->
     <link rel="stylesheet" href="/css/+Ocio.css">
+    <!-- Overrides móviles del sitio -->
+    <link rel="stylesheet" media="(max-width: 768px)" href="/css/mobile.css">
     <!-- AOS CSS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+
+    <!-- Ajustes móviles específicos: apilar y usar imágenes con opacidad como fondo -->
+    <style>
+    @media (max-width: 768px) {
+        /* Cabecera: botón visible y logo más pequeño */
+        #header { padding: 12px 8px; text-align: center; }
+        .back-button { position: sticky; top: 8px; z-index: 40; padding: 8px 12px; font-size: .95rem; }
+        .header-logo { width: 140px; height: auto; display: block; margin: 8px auto; }
+        #header p { margin: 4px 0 0; font-size: 1rem; }
+
+        /* Layout genérico de secciones */
+        main { padding: 0 8px; }
+        section { margin: 12px 0; }
+        .section-content {
+            position: relative;               /* necesario para la imagen de fondo */
+            overflow: hidden;                 /* recorta la imagen atenuada al contenedor */
+            padding: 16px 12px;
+            border-radius: 12px;
+        }
+        .section-text h2 {
+            font-size: clamp(1.15rem, 5.6vw, 1.5rem);
+            margin: 0 0 8px;
+            text-align: center;
+        }
+        .section-text p,
+        .section-text ul {
+            font-size: 1rem;
+            line-height: 1.5;
+            margin: 0 0 8px;
+        }
+        .section-text ul { padding-left: 18px; }
+
+        /* Convertir la imagen única de la sección en fondo atenuado detrás del texto */
+        .section-content > .section-image {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.18;                    /* opacidad solicitada */
+            filter: saturate(90%);
+            pointer-events: none;
+            z-index: 0;
+        }
+        /* Asegurar el texto por encima */
+        .section-text { position: relative; z-index: 1; }
+
+        /* Cuando hay varias imágenes agrupadas, mantenerlas visibles debajo del texto */
+        .section-images { margin-top: 8px; display: grid; grid-template-columns: 1fr; gap: 8px; }
+        .section-images .section-image {
+            position: static;
+            width: 100%;
+            height: auto;
+            opacity: 1;
+            object-fit: contain;
+            border-radius: 12px;
+        }
+
+        /* Si la imagen va fuera de .section-content (casos plans/quick-actions/shortcuts/explore) mantenerla visible y contenida */
+        #plans .section-image:not(.section-content > .section-image),
+        #quick-actions .section-image:not(.section-content > .section-image),
+        #shortcuts .section-image:not(.section-content > .section-image),
+        #explore .section-image:not(.section-content > .section-image) {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: contain;
+            border-radius: 12px;
+            margin-top: 8px;
+            opacity: 1;
+            position: static;
+        }
+    }
+    </style>
 </head>
 <body>
 

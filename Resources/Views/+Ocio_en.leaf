@@ -6,8 +6,86 @@
     <title>+Ocio - Reinventing Social Leisure</title>
     <!-- Styles -->
     <link rel="stylesheet" href="/css/+Ocio.css">
+    <!-- Site-wide mobile overrides -->
+    <link rel="stylesheet" media="(max-width: 768px)" href="/css/mobile.css">
     <!-- AOS CSS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+
+    <!-- Page-scoped mobile tweaks: stack sections and fade images as background -->
+    <style>
+    @media (max-width: 768px) {
+        /* Header: keep back button visible and logo smaller */
+        #header { padding: 12px 8px; text-align: center; }
+        .back-button { position: sticky; top: 8px; z-index: 40; padding: 8px 12px; font-size: .95rem; }
+        .header-logo { width: 140px; height: auto; display: block; margin: 8px auto; }
+        #header p { margin: 4px 0 0; font-size: 1rem; }
+
+        /* Generic section layout */
+        main { padding: 0 8px; }
+        section { margin: 12px 0; }
+        .section-content {
+            position: relative;              /* needed for absolute bg image */
+            overflow: hidden;                /* clip the faded image to the section */
+            padding: 16px 12px;              /* inner padding for text */
+            border-radius: 12px;
+        }
+        .section-text h2 {
+            font-size: clamp(1.15rem, 5.6vw, 1.5rem);
+            margin: 0 0 8px;
+            text-align: center;
+        }
+        .section-text p,
+        .section-text ul { 
+            font-size: 1rem; 
+            line-height: 1.5; 
+            margin: 0 0 8px; 
+        }
+        .section-text ul { padding-left: 18px; }
+
+        /* Turn single section images into a faded background behind the text */
+        .section-content > .section-image {
+            position: absolute;
+            inset: 0;                        /* cover container */
+            width: 100%;
+            height: 100%;
+            object-fit: cover;               /* fill without distortion */
+            opacity: 0.18;                   /* fade as requested */
+            filter: saturate(90%);
+            pointer-events: none;            /* click-through */
+            z-index: 0;
+        }
+        /* Ensure text is above the faded image */
+        .section-text { position: relative; z-index: 1; }
+
+        /* For sections that have multiple images grouped, keep them visible below the text */
+        .section-images { margin-top: 8px; display: grid; grid-template-columns: 1fr; gap: 8px; }
+        .section-images .section-image { 
+            position: static; 
+            width: 100%; 
+            height: auto; 
+            opacity: 1; 
+            object-fit: contain; 
+            border-radius: 12px; 
+        }
+
+        /* Also when an image comes after .section-content (like in #plans / #quick-actions / #shortcuts / #explore) */
+        /* We already target “.section-content > .section-image”. Those sections place the image either inside .section-content
+           or as a direct child; if it is outside, keep it visible but smaller. */
+        #plans .section-image:not(.section-content > .section-image),
+        #quick-actions .section-image:not(.section-content > .section-image),
+        #shortcuts .section-image:not(.section-content > .section-image),
+        #explore .section-image:not(.section-content > .section-image) {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: contain;
+            border-radius: 12px;
+            margin-top: 8px;
+            opacity: 1;
+            position: static;
+        }
+    }
+    </style>
 </head>
 <body>
 
