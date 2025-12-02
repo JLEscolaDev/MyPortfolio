@@ -204,7 +204,7 @@
                 </div>
                 <div class="tile">
                     <video controls playsinline preload="metadata" class="contain">
-                        <source src="/Videos/PlanetDiscovery+SpaceTravelDrawing.mp4" type="video/mp4">
+                        <source src="/Videos/PlanetDiscoverySpaceTravelDrawing.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div class="tile">
@@ -233,7 +233,7 @@
             <h2>Summary — Inventory, Stellar Map & Alerts</h2>
             <div class="single">
                 <video controls playsinline preload="metadata" class="contain">
-                    <source src="/Videos/SummaryVideoWithInventory+StellarMap+TravelAlertSummaries+ResourceReceiveAndTimerActivationWaitingForTheNextResource.mp4" type="video/mp4">
+                    <source src="/Videos/SummaryVideoWithInventoryStellarMapTravelAlertSummariesResourceReceiveAndTimerActivationWaitingForTheNextResource.mp4" type="video/mp4">
                 </video>
             </div>
         </div>

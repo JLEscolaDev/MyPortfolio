@@ -96,17 +96,7 @@
 
         <!-- Quitamos AOS en el contenedor del vídeo para evitar interferencias durante la prueba -->
         <div class="video-wrapper">
-            <!-- Poster eliminado temporalmente para evitar 404 o efectos colaterales -->
-            <video
-                controls
-                playsinline
-                preload="metadata"
-                style="width:100%; max-height:70vh; background:#000;"
-            >
-                <source src="/Videos/bingoOfflineSmallDemo.mp4" type="video/mp4">
-                Tu navegador no soporta la etiqueta de vídeo.
-                <a href="/Videos/bingoOfflineSmallDemo.mp4">Abrir vídeo directamente</a>.
-            </video>
+            <video controls src="/Videos/bingoOfflineSmallDemo.mp4" type="video/mp4"></video>
         </div>
 
         <div class="meta">

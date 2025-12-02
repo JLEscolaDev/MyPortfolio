@@ -30,10 +30,7 @@
                 ¡Bienvenido a Tablero Kanban Doom! Un juego divertido e interactivo para gestionar tus tareas usando un tablero Kanban, inspirado en el caos y la estrategia de una jornada de trabajo. 💀
             </p>
 
-            <video controls>
-                <source src="/Videos/KanbanBoardTeaserVideo.mp4" type="video/mp4">
-                Tu navegador no soporta la reproducción de vídeo.
-            </video>
+            <video controls src="Videos/KanbanBoardTeaserVideo.mp4" type="video/mp4"></video>
         </section>
 
         <!-- ¿Cómo funciona? -->

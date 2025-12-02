@@ -95,17 +95,7 @@
 
         <!-- Remove AOS on the video wrapper to avoid any interference while testing -->
         <div class="video-wrapper">
-            <!-- Removed poster temporarily to avoid 404s or layout issues -->
-            <video
-                controls
-                playsinline
-                preload="metadata"
-                style="width:100%; max-height:70vh; background:#000;"
-            >
-                <source src="/Videos/bingoOfflineSmallDemo.mp4" type="video/mp4">
-                Your browser does not support the video tag. 
-                <a href="/Videos/bingoOfflineSmallDemo.mp4">Open video directly</a>.
-            </video>
+            <video controls src="/Videos/bingoOfflineSmallDemo.mp4" type="video/mp4"></video>
         </div>
 
         <div class="meta">
