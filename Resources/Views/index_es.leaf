@@ -318,7 +318,7 @@
 
     <div class="contact-container">
         <div class="contact-image">
-            <img src="Images/ProfilePhotoJLE.jpg" alt="Jose Luis Escolá Photo">
+            <img src="/Images/ProfilePhotoJLE.jpg" alt="Jose Luis Escolá Photo">
         </div>
         <div class="contact-form">
             <form action="/send-message" method="POST">
