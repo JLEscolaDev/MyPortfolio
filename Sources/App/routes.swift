@@ -28,7 +28,50 @@ struct ViewContext: Encodable {
     let language: String
 }
 
+private let portfolioBaseURL = "https://jle-escola-portfolio-2c4df8d68d6b.herokuapp.com"
+private let localizedRoutes = [
+    "",
+    "theCargoLift",
+    "steamMachine",
+    "VR_EntrepreneurshipProject",
+    "loquo",
+    "merchOnDemand",
+    "baretosBaratos",
+    "swiftUIOfflineBingo",
+    "+Ocio",
+    "tgpLogoRedesign",
+    "doomKanban"
+]
 
+private func buildSitemapXML() -> String {
+    let isoFormatter = ISO8601DateFormatter()
+    let now = isoFormatter.string(from: Date())
+    let allLocalizedURLs = localizedRoutes.flatMap { route -> [String] in
+        let safeRoute = route.isEmpty ? "" : "/\(route)"
+        return [
+            "\(portfolioBaseURL)\(safeRoute)?lang=es",
+            "\(portfolioBaseURL)\(safeRoute)?lang=en"
+        ]
+    }
+
+    let urlsXML = allLocalizedURLs.map { url in
+        """
+          <url>
+            <loc>\(url)</loc>
+            <lastmod>\(now)</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>0.8</priority>
+          </url>
+        """
+    }.joined(separator: "\n")
+
+    return """
+    <?xml version="1.0" encoding="UTF-8"?>
+    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    \(urlsXML)
+    </urlset>
+    """
+}
 
 func routes(_ app: Application) throws {
 
@@ -116,5 +159,29 @@ func routes(_ app: Application) throws {
     app.get("doomKanban") { req in
         let language = req.selectedLanguage
         return req.view.render("doomKanban_\(language)")
+    }
+
+    app.get("robots.txt") { _ -> Response in
+        let robots = """
+        User-agent: *
+        Allow: /
+
+        Host: \(portfolioBaseURL)
+        Sitemap: \(portfolioBaseURL)/sitemap.xml
+        """
+        var headers = HTTPHeaders()
+        headers.replaceOrAdd(name: .contentType, value: "text/plain; charset=utf-8")
+        return Response(status: .ok, headers: headers, body: .init(string: robots))
+    }
+
+    app.get("sitemap.xml") { _ -> Response in
+        var headers = HTTPHeaders()
+        headers.replaceOrAdd(name: .contentType, value: "application/xml; charset=utf-8")
+        return Response(status: .ok, headers: headers, body: .init(string: buildSitemapXML()))
+    }
+
+    app.get("go", "company") { req -> Response in
+        let sourceLanguage = req.selectedLanguage
+        return req.redirect(to: "https://www.inversionesmezcola.es/\(sourceLanguage)?ref=portfolio", redirectType: .temporary)
     }
 }

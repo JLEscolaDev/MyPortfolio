@@ -8,6 +8,7 @@ public func configure(_ app: Application) async throws {
 //    app.http.server.configuration.port = 8081
 
     app.views.use(.leaf)
+    app.middleware.use(SEOHeadersMiddleware())
 
 
     // register routes

@@ -4,6 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jose Luis Escolá | Professional Portfolio</title>
+    <meta name="description" content="Professional portfolio of Jose Luis Escolá, Senior iOS and Apple Fullstack developer with Swift, SwiftUI, Vapor and product strategy experience.">
+    <meta name="robots" content="index,follow,max-image-preview:large">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Jose Luis Escolá | Professional Portfolio">
+    <meta property="og:description" content="Technical portfolio featuring product, iOS, and Vapor backend projects.">
+    <meta property="og:url" content="https://jle-escola-portfolio-2c4df8d68d6b.herokuapp.com/?lang=en">
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://jle-escola-portfolio-2c4df8d68d6b.herokuapp.com/?lang=en">
+    <link rel="alternate" hreflang="es" href="https://jle-escola-portfolio-2c4df8d68d6b.herokuapp.com/?lang=es">
+    <link rel="alternate" hreflang="en" href="https://jle-escola-portfolio-2c4df8d68d6b.herokuapp.com/?lang=en">
+    <link rel="alternate" hreflang="x-default" href="https://jle-escola-portfolio-2c4df8d68d6b.herokuapp.com/">
+    <link rel="me" href="https://www.inversionesmezcola.es/en">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Person",
+            "name": "Jose Luis Escolá",
+            "jobTitle": "Senior iOS Developer",
+            "url": "https://jle-escola-portfolio-2c4df8d68d6b.herokuapp.com/?lang=en",
+            "worksFor": {
+              "@type": "Organization",
+              "name": "Inversiones Mezcola",
+              "url": "https://www.inversionesmezcola.es/en"
+            }
+          },
+          {
+            "@type": "WebSite",
+            "name": "Jose Luis Escolá Portfolio",
+            "url": "https://jle-escola-portfolio-2c4df8d68d6b.herokuapp.com/?lang=en",
+            "inLanguage": "en-US"
+          }
+        ]
+      }
+    </script>
 
     <!-- Link to AOS CSS -->
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -318,7 +355,7 @@
 
     <div class="contact-container">
         <div class="contact-image">
-            <img src="Images/ProfilePhotoJLE.jpg" alt="Your Image">
+            <img src="/Images/ProfilePhotoJLE.jpg" alt="Jose Luis Escola photo">
         </div>
         <div class="contact-form">
             <form action="/send-message" method="POST">
